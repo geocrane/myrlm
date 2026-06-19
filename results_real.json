@@ -1,0 +1,97 @@
+{
+  "config": {
+    "dataset": "documents",
+    "lengths": [],
+    "per_type": null,
+    "methods": [
+      "rlm",
+      "rag",
+      "naive"
+    ]
+  },
+  "elapsed_total": 126.0,
+  "stopped_early": false,
+  "records": [
+    {
+      "task_id": "docs_1",
+      "type": "real",
+      "char_len": 6310,
+      "question": "Как зовут детей?",
+      "source": "/Users/geocrane/Dev/RLM/myrlm/docs",
+      "n_files": 1,
+      "method": "rlm",
+      "answer": "Настенька и Наташенька",
+      "gold": "",
+      "correct": null,
+      "judge_method": "none",
+      "note": "",
+      "elapsed": 21.16,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 3715,
+        "completion_tokens": 413,
+        "total_tokens": 4128,
+        "total_seconds": 21.16,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "docs_1",
+      "type": "real",
+      "char_len": 6310,
+      "question": "Как зовут детей?",
+      "source": "/Users/geocrane/Dev/RLM/myrlm/docs",
+      "n_files": 1,
+      "method": "rag",
+      "answer": "",
+      "gold": "",
+      "correct": null,
+      "judge_method": "none",
+      "note": "чанков: 7, отобрано: 6",
+      "elapsed": 69.49,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 1851,
+        "completion_tokens": 2048,
+        "total_tokens": 3899,
+        "total_seconds": 68.85,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "docs_1",
+      "type": "real",
+      "char_len": 6310,
+      "question": "Как зовут детей?",
+      "source": "/Users/geocrane/Dev/RLM/myrlm/docs",
+      "n_files": 1,
+      "method": "naive",
+      "answer": "Детей зовут Настенька и Наташенька.",
+      "gold": "",
+      "correct": null,
+      "judge_method": "none",
+      "note": "",
+      "elapsed": 35.31,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 1832,
+        "completion_tokens": 931,
+        "total_tokens": 2763,
+        "total_seconds": 34.48,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    }
+  ]
+}

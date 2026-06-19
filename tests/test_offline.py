@@ -18,6 +18,7 @@ from baselines.rag import chunk_text
 from eval.datasets import generate_tasks
 from eval.datasets_complex import generate_complex_tasks, _CATEGORY_LIMITS
 from eval.judge import exact_match, set_match, all_match
+from eval.doc_loader import load_folder, build_real_tasks
 
 
 def test_repl_persistence_and_context():
@@ -135,6 +136,58 @@ def test_complex_deterministic_and_gold():
         num, cat, amount = m_num.group(1), m_cat.group(1), int(m_sum.group(1))
         if num in golds:
             assert amount > _CATEGORY_LIMITS[cat]
+
+
+def _make_kb(tmp):
+    """Папка базы знаний из форматов без внешних зависимостей (txt/csv/md)."""
+    with open(os.path.join(tmp, "notes.txt"), "w", encoding="utf-8") as f:
+        f.write("Бюджет проекта Аврора — 5 млн руб.")
+    with open(os.path.join(tmp, "data.csv"), "w", encoding="utf-8") as f:
+        f.write("отдел,сотрудник\nАрхив,Орен\n")
+    with open(os.path.join(tmp, "readme.md"), "w", encoding="utf-8") as f:
+        f.write("# Заметка\nКонтакт: Тадеуш.")
+    os.mkdir(os.path.join(tmp, "sub"))  # рекурсивный обход
+    with open(os.path.join(tmp, "sub", "extra.txt"), "w", encoding="utf-8") as f:
+        f.write("Подпапка тоже читается.")
+
+
+def test_doc_loader_folder():
+    import tempfile
+    tmp = tempfile.mkdtemp(prefix="kb_")
+    _make_kb(tmp)
+    ctx, n = load_folder(tmp)
+    assert n == 4                              # 3 в корне + 1 в подпапке
+    for marker in ("notes.txt", "data.csv", "readme.md", "extra.txt"):
+        assert f"ФАЙЛ: " in ctx and marker in ctx
+    assert "Аврора" in ctx and "Подпапка" in ctx
+
+
+def test_doc_loader_missing_folder():
+    raised = False
+    try:
+        load_folder("/нет/такой/папки/совсем")
+    except FileNotFoundError:
+        raised = True
+    assert raised
+
+
+def test_build_real_tasks():
+    import tempfile
+    tmp = tempfile.mkdtemp(prefix="kb_")
+    _make_kb(tmp)
+    # 1 заполненная строка, 2 пустых (пропускаются).
+    tasks = build_real_tasks([(tmp, "Какой бюджет?"), ("", ""), ("", "  ")])
+    assert len(tasks) == 1
+    t = tasks[0]
+    assert t.answer_kind == "none" and t.answer == "" and t.n_files == 4
+    assert t.source == tmp and t.char_len == len(t.context)
+    # Частично заполненная строка — ошибка.
+    bad = False
+    try:
+        build_real_tasks([(tmp, "")])
+    except ValueError:
+        bad = True
+    assert bad
 
 
 def _run_all():

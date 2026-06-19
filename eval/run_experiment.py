@@ -37,6 +37,7 @@ def _run_one(method: str, task: Task, config: dict[str, Any], embedder, judge_cl
     client = LLMClient(config)
     iterations = None
     stopped = None
+    note = ""
 
     if method == "rlm":
         engine = RLMEngine(client=client, config=config)
@@ -45,27 +46,36 @@ def _run_one(method: str, task: Task, config: dict[str, Any], embedder, judge_cl
         iterations, stopped = res.iterations, res.stopped_reason
     elif method == "rag":
         res = run_rag(task.question, task.context, client=client, config=config, embedder=embedder)
-        answer, elapsed = res.answer, res.elapsed
+        answer, elapsed, note = res.answer, res.elapsed, res.note
     elif method == "naive":
         res = run_naive(task.question, task.context, client=client, config=config)
-        answer, elapsed = res.answer, res.elapsed
+        answer, elapsed, note = res.answer, res.elapsed, res.note
     else:
         raise ValueError(f"неизвестный метод: {method}")
 
-    verdict = evaluate(
-        task.question, task.answer, answer,
-        answer_kind=task.answer_kind, judge_client=judge_client,
-    )
+    # Реальные документы без эталона (answer_kind="none") — судью не зовём,
+    # вердикт не определён: пользователь сравнивает ответы методов вручную.
+    if task.answer_kind == "none":
+        correct, judge_method = None, "none"
+    else:
+        verdict = evaluate(
+            task.question, task.answer, answer,
+            answer_kind=task.answer_kind, judge_client=judge_client,
+        )
+        correct, judge_method = verdict["correct"], verdict["method"]
     return {
         "task_id": task.id,
         "type": task.type,
         "char_len": task.char_len,
         "question": task.question,
+        "source": task.source,
+        "n_files": task.n_files,
         "method": method,
         "answer": answer,
         "gold": task.answer,
-        "correct": verdict["correct"],
-        "judge_method": verdict["method"],
+        "correct": correct,
+        "judge_method": judge_method,
+        "note": note,
         "elapsed": elapsed,
         "iterations": iterations,
         "stopped_reason": stopped,
@@ -119,8 +129,9 @@ def _summarize(records: list[dict[str, Any]]) -> None:
 def _empty_record(task: Task, method: str, msg: str) -> dict[str, Any]:
     return {
         "task_id": task.id, "type": task.type, "char_len": task.char_len,
-        "question": task.question, "method": method, "answer": msg, "gold": task.answer,
-        "correct": False, "judge_method": "error", "elapsed": 0.0,
+        "question": task.question, "source": task.source, "n_files": task.n_files,
+        "method": method, "answer": msg, "gold": task.answer,
+        "correct": False, "judge_method": "error", "note": "", "elapsed": 0.0,
         "iterations": None, "stopped_reason": "exception", "usage": {"total_tokens": 0},
     }
 
@@ -132,34 +143,47 @@ def run_suite(
     *,
     quick: bool = False,
     monitor: RunMonitor | None = None,
+    tasks: list[Task] | None = None,
+    results_path: str | None = None,
 ) -> dict[str, Any]:
     """Программный прогон стенда. Используется и CLI (main), и ноутбуком.
 
     monitor получает события (suite_start/run_start/token/step/run_end/suite_end) и
     может попросить остановку (should_stop). Возвращает словарь с записями и таймингом.
+
+    Если передан `tasks` — прогоняем именно их (режим реальных документов), минуя
+    генерацию синтетики; результаты пишутся в `results_path` (по умолч.
+    results_real.json). Иначе генерируем задачи по `dataset`/config как раньше.
     """
     methods = methods or ALL_METHODS
     monitor = monitor or RunMonitor()
 
-    if dataset == "complex":
-        from eval.datasets_complex import generate_complex_tasks as gen_tasks
-        ecfg = config["eval_complex"]
+    if tasks is not None:
+        # Режим реальных документов: задачи готовы, длины/per_type не нужны.
+        lengths, per_type = [], None
+        json_path = results_path or "results_real.json"
+        meta = {"dataset": "documents", "lengths": [], "methods": methods, "tasks": len(tasks)}
     else:
-        gen_tasks = generate_tasks
-        ecfg = config["eval"]
+        if dataset == "complex":
+            from eval.datasets_complex import generate_complex_tasks as gen_tasks
+            ecfg = config["eval_complex"]
+        else:
+            gen_tasks = generate_tasks
+            ecfg = config["eval"]
 
-    if quick:
-        lengths = [ecfg["context_lengths"][0]]
-        per_type = 1
-    else:
-        lengths = ecfg["context_lengths"]
-        per_type = ecfg["tasks_per_type"]
+        if quick:
+            lengths = [ecfg["context_lengths"][0]]
+            per_type = 1
+        else:
+            lengths = ecfg["context_lengths"]
+            per_type = ecfg["tasks_per_type"]
 
-    tasks = gen_tasks(lengths, per_type, seed=ecfg["seed"])
+        tasks = gen_tasks(lengths, per_type, seed=ecfg["seed"])
+        json_path = results_path or ecfg["results_path"]
+        meta = {"dataset": dataset, "lengths": lengths, "methods": methods, "tasks": len(tasks)}
+
     total = len(tasks) * len(methods)
-    monitor.suite_start(total, {
-        "dataset": dataset, "lengths": lengths, "methods": methods, "tasks": len(tasks),
-    })
+    monitor.suite_start(total, meta)
 
     # Общие ресурсы между задачами: эмбеддер (тяжёлый) и судья.
     embedder = _Embedder(config["rag"], config["llm"]) if "rag" in methods else None
@@ -186,12 +210,11 @@ def run_suite(
             break
 
     out = {
-        "config": {"dataset": dataset, "lengths": lengths, "per_type": per_type, "methods": methods},
+        "config": {"dataset": meta["dataset"], "lengths": lengths, "per_type": per_type, "methods": methods},
         "elapsed_total": round(time.time() - started, 1),
         "stopped_early": stopped_early,
         "records": records,
     }
-    json_path = ecfg["results_path"]
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 

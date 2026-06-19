@@ -47,7 +47,9 @@ class Task:
     answer: str
     context: str
     char_len: int
-    answer_kind: str  # "exact" | "judge" — как оценивать
+    answer_kind: str  # "exact" | "judge" | "none" (реальные документы без эталона)
+    source: str = ""   # папка базы знаний (для режима реальных документов)
+    n_files: int = 0   # сколько файлов прочитано из папки
 
 
 def _pad_to_length(rng: random.Random, pieces: list[str], target_chars: int) -> list[str]:

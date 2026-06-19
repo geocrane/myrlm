@@ -69,6 +69,7 @@ class NotebookMonitor(RunMonitor):
     # ---- управление ----
     def reset(self) -> None:
         self._live_buf = ""
+        self._has_gold = True   # уточняется в suite_start по метке датасета
         self._n_done = 0
         self._n_correct = 0
         self._sum_secs = 0.0
@@ -88,6 +89,7 @@ class NotebookMonitor(RunMonitor):
     def suite_start(self, total: int, meta: dict[str, Any]) -> None:
         self.progress.max = max(1, total)
         self.progress.value = 0
+        self._has_gold = meta.get("dataset") != "documents"  # реальные документы — без эталона
         self._append(_block(
             f"▶ старт: датасет <b>{meta['dataset']}</b>, задач {meta['tasks']}, "
             f"методы {meta['methods']}, длины {meta['lengths']}, прогонов {total}",
@@ -136,25 +138,36 @@ class NotebookMonitor(RunMonitor):
     def run_end(self, record: dict[str, Any]) -> None:
         self._flush_live()
         self._n_done += 1
-        self._n_correct += 1 if record["correct"] else 0
         self._sum_secs += record.get("elapsed", 0) or 0
         self._sum_tokens += record.get("usage", {}).get("total_tokens", 0) or 0
         self.progress.value = self._n_done
-        mark = "✓" if record["correct"] else "✗"
         extra = ""
         if record.get("iterations") is not None:
             extra = f" · итер {record['iterations']} · {record.get('stopped_reason')}"
-        self._append(_block(
-            f"{mark} <b>{record['method'].upper()}</b> → {_html.escape(str(record['answer'])[:160])}"
-            f"<br><span style='color:#666'>эталон: {_html.escape(str(record['gold'])[:120])} · "
-            f"{record.get('elapsed')}с · {record.get('usage', {}).get('total_tokens', 0)} ток{extra}</span>",
-            bg="#eafaef" if record["correct"] else "#fdeeee",
-            border="#2e9e4f" if record["correct"] else "#c0392b",
-        ))
-        acc = self._n_correct / self._n_done if self._n_done else 0
+        if record["correct"] is None:
+            # Реальные документы без эталона — нейтральный показ, без ✓/✗ и строки эталона.
+            self._append(_block(
+                f"• <b>{record['method'].upper()}</b> → {_html.escape(str(record['answer'])[:160])}"
+                f"<br><span style='color:#666'>{record.get('elapsed')}с · "
+                f"{record.get('usage', {}).get('total_tokens', 0)} ток{extra}</span>",
+                bg="#f3f3f3", border="#999",
+            ))
+        else:
+            self._n_correct += 1 if record["correct"] else 0
+            mark = "✓" if record["correct"] else "✗"
+            self._append(_block(
+                f"{mark} <b>{record['method'].upper()}</b> → {_html.escape(str(record['answer'])[:160])}"
+                f"<br><span style='color:#666'>эталон: {_html.escape(str(record['gold'])[:120])} · "
+                f"{record.get('elapsed')}с · {record.get('usage', {}).get('total_tokens', 0)} ток{extra}</span>",
+                bg="#eafaef" if record["correct"] else "#fdeeee",
+                border="#2e9e4f" if record["correct"] else "#c0392b",
+            ))
+        acc_part = ""
+        if self._has_gold:
+            acc = self._n_correct / self._n_done if self._n_done else 0
+            acc_part = f"точность пока: <b>{acc:.0%}</b> ({self._n_correct}/{self._n_done}) · "
         self.lbl_stats.value = (
-            f"Готово: <b>{self._n_done}/{self.progress.max}</b> · "
-            f"точность пока: <b>{acc:.0%}</b> ({self._n_correct}/{self._n_done}) · "
+            f"Готово: <b>{self._n_done}/{self.progress.max}</b> · {acc_part}"
             f"суммарно: {self._sum_secs:.0f} с · {self._sum_tokens} токенов"
         )
 
@@ -196,17 +209,40 @@ class ExperimentUI:
         self.quick_cb = W.Checkbox(value=quick, description="quick (1 задача/тип, 1 длина)")
         self.btn_run = W.Button(description="Запустить", button_style="success", icon="play")
         self.btn_stop = W.Button(description="Остановить", button_style="warning", icon="stop")
+
+        # --- блок реальных документов: 5 строк (папка базы знаний + свой вопрос) ---
+        self.doc_rows: list[tuple[W.Text, W.Text]] = []
+        row_boxes = []
+        for i in range(1, 6):
+            folder = W.Text(placeholder=f"путь к папке базы знаний #{i}",
+                            layout=W.Layout(width="42%"))
+            question = W.Text(placeholder="ваш вопрос к этой базе",
+                              layout=W.Layout(width="52%"))
+            self.doc_rows.append((folder, question))
+            row_boxes.append(W.HBox([folder, question]))
+        self.btn_run_docs = W.Button(description="Запустить на документах",
+                                     button_style="success", icon="folder-open",
+                                     layout=W.Layout(width="auto"))
+
         self.monitor = NotebookMonitor()
         self._thread: threading.Thread | None = None
 
         self.btn_run.on_click(self._on_run)
         self.btn_stop.on_click(lambda _: self.monitor.request_stop())
+        self.btn_run_docs.on_click(self._on_run_docs)
 
         controls = W.VBox([
+            W.HTML("<b>Синтетический датасет</b>"),
             W.HBox([self.config_text]),
             W.HBox([self.dataset_dd, self.quick_cb]),
             W.HBox([self.methods_sel]),
             W.HBox([self.btn_run, self.btn_stop]),
+            W.HTML("<hr><b>Реальные документы (своя база знаний)</b><br>"
+                   "<span style='color:#666'>Укажи папку и вопрос. Пустые строки пропускаются. "
+                   "Используются те же «методы» и «config» сверху. "
+                   "Результат → results_real.xlsx.</span>"),
+            *row_boxes,
+            W.HBox([self.btn_run_docs]),
         ])
         self.container = W.VBox([controls, self.monitor.panel])
 
@@ -226,6 +262,36 @@ class ExperimentUI:
         def work():
             try:
                 run_suite(config, methods, dataset, quick=quick, monitor=self.monitor)
+            except Exception as e:  # noqa: BLE001
+                self.monitor.error(e)
+
+        self._thread = threading.Thread(target=work, daemon=True)
+        self._thread.start()
+
+    def _on_run_docs(self, _) -> None:
+        if self._thread and self._thread.is_alive():
+            return  # уже идёт
+        from eval.doc_loader import build_real_tasks
+
+        rows = [(f.value, q.value) for f, q in self.doc_rows]
+        config = load_config(self.config_text.value or None)
+        methods = list(self.methods_sel.value) or None
+        self.monitor.reset()
+        self.monitor._stop = False
+
+        try:
+            tasks = build_real_tasks(rows)
+        except Exception as e:  # noqa: BLE001 — показать понятную ошибку в мониторе
+            self.monitor.error(e)
+            return
+        if not tasks:
+            self.monitor.lbl_status.value = "Заполни хотя бы одну строку: папка + вопрос."
+            return
+
+        def work():
+            try:
+                run_suite(config, methods, tasks=tasks,
+                          results_path="results_real.json", monitor=self.monitor)
             except Exception as e:  # noqa: BLE001
                 self.monitor.error(e)
 

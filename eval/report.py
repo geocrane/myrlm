@@ -247,17 +247,118 @@ def _build_by_length_sheet(wb: Workbook, records: list[dict], methods: list[str]
     ws.freeze_panes = "C2"
 
 
+def _build_compare_sheet(wb: Workbook, records: list[dict], methods: list[str]) -> None:
+    """Режим реальных документов: ответы методов рядом, без эталона и ✓/✗."""
+    ws = wb.create_sheet("Сравнение")
+
+    by_task: dict[str, dict[str, Any]] = defaultdict(dict)
+    meta: dict[str, dict[str, Any]] = {}
+    for r in records:
+        by_task[r["task_id"]][r["method"]] = r
+        meta.setdefault(r["task_id"], {
+            "source": r.get("source", ""), "n_files": r.get("n_files", ""),
+            "char_len": r.get("char_len", ""), "question": r.get("question", ""),
+        })
+
+    base_cols = ["КБ (папка)", "Файлов", "Длина, симв.", "ВОПРОС"]
+    header: list[str] = list(base_cols)
+    for m in methods:
+        t = METHOD_TITLE.get(m, m)
+        header += [f"{t}: ответ", f"{t}: время,с", f"{t}: токены", f"{t}: примечание"]
+        if m == "rlm":
+            header += ["RLM: итераций", "RLM: остановка"]
+    ws.append(header)
+
+    for task_id in sorted(by_task):
+        mt = meta[task_id]
+        row: list[Any] = [mt["source"], mt["n_files"], mt["char_len"], mt["question"]]
+        for m in methods:
+            rec = by_task[task_id].get(m, {})
+            row.append(rec.get("answer", "—"))
+            row.append(rec.get("elapsed", ""))
+            row.append(rec.get("usage", {}).get("total_tokens", ""))
+            row.append(rec.get("note", ""))
+            if m == "rlm":
+                row.append(rec.get("iterations", ""))
+                row.append(rec.get("stopped_reason", ""))
+        ws.append(row)
+
+    # Стиль шапки.
+    for c, _ in enumerate(header, 1):
+        cell = ws.cell(row=1, column=c)
+        cell.fill = _HEADER_FILL
+        cell.font = _HEADER_FONT
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    # Ширины и заливка групп по методам + перенос «ответ»/«вопрос».
+    widths = {"КБ (папка)": 28, "Файлов": 8, "Длина, симв.": 12, "ВОПРОС": 48}
+    for c, title in enumerate(header, 1):
+        letter = get_column_letter(c)
+        if title in widths:
+            ws.column_dimensions[letter].width = widths[title]
+        elif title.endswith("ответ"):
+            ws.column_dimensions[letter].width = 50
+        elif title.endswith("примечание"):
+            ws.column_dimensions[letter].width = 26
+        else:
+            ws.column_dimensions[letter].width = 12
+    for row in ws.iter_rows(min_row=2):
+        for c, cell in enumerate(row, 1):
+            title = header[c - 1]
+            for m in methods:
+                if title.startswith(METHOD_TITLE.get(m, m) + ":"):
+                    cell.fill = _METHOD_FILLS.get(m, PatternFill())
+            if title.endswith("ответ") or title == "ВОПРОС" or title.endswith("примечание"):
+                cell.alignment = Alignment(wrap_text=True, vertical="top")
+    ws.freeze_panes = "E2"  # фиксируем общие колонки и шапку
+    ws.auto_filter.ref = f"A1:{get_column_letter(len(header))}1"
+
+
+def _build_resources_sheet(wb: Workbook, records: list[dict], methods: list[str]) -> None:
+    """Средние ресурсы по методам — чтобы видеть, как работает каждый подход."""
+    ws = wb.create_sheet("Ресурсы", 0)  # первой
+    agg: dict[str, dict[str, float]] = defaultdict(lambda: {"n": 0, "secs": 0.0, "tok": 0})
+    for r in records:
+        a = agg[r["method"]]
+        a["n"] += 1
+        a["secs"] += r.get("elapsed", 0) or 0
+        a["tok"] += r.get("usage", {}).get("total_tokens", 0) or 0
+
+    header = ["Метод", "Прогонов", "Ср. время, с", "Ср. токены", "Сумм. токены"]
+    ws.append(header)
+    for m in methods:
+        a = agg.get(m)
+        if not a or not a["n"]:
+            continue
+        ws.append([
+            METHOD_TITLE.get(m, m), int(a["n"]),
+            round(a["secs"] / a["n"], 1), int(a["tok"] / a["n"]), int(a["tok"]),
+        ])
+    for c, _ in enumerate(header, 1):
+        cell = ws.cell(row=1, column=c)
+        cell.fill = _HEADER_FILL
+        cell.font = _HEADER_FONT
+        cell.alignment = Alignment(horizontal="center")
+    for c, w in enumerate([16, 10, 14, 14, 14], 1):
+        ws.column_dimensions[get_column_letter(c)].width = w
+
+
 def write_report(results_path: str, xlsx_path: str) -> str:
     with open(results_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     records = data["records"]
     methods = _methods_present(records)
+    has_gold = any(r.get("gold") for r in records)
 
     wb = Workbook()
     wb.remove(wb.active)  # убрать дефолтный пустой лист
-    _build_summary_sheet(wb, records, methods)
-    _build_by_length_sheet(wb, records, methods)
-    _build_detail_sheet(wb, records, methods)
+    if has_gold:
+        _build_summary_sheet(wb, records, methods)
+        _build_by_length_sheet(wb, records, methods)
+        _build_detail_sheet(wb, records, methods)
+    else:
+        # Реальные документы без эталона: сравнение ответов + ресурсы.
+        _build_compare_sheet(wb, records, methods)
+        _build_resources_sheet(wb, records, methods)
     wb.save(xlsx_path)
     return xlsx_path
 
