@@ -1,0 +1,51 @@
+# Конфигурация стенда RLM.
+# Все компоненты (движок, бейзлайны, эксперимент) читают этот файл.
+
+llm:
+  # OpenAI-совместимый эндпоинт LM Studio (Server -> Start).
+  base_url: "http://localhost:1234/v1"
+  api_key: "lm-studio"            # заглушка, LM Studio ключ не проверяет
+  model: "qwen/qwen3.5-9b"        # имя как в LM Studio (GET /v1/models); поменяй под свою модель
+  temperature: 0.3
+  max_tokens: 2048
+  # Qwen3 умеет режим рассуждений. Для агентного цикла по умолчанию выключаем
+  # (быстрее и чистый вывод без <think>...</think>).
+  enable_thinking: false
+  # Как переключать режим рассуждений: qwen — вставлять /think|/no_think (Qwen3/3.5);
+  # none — не вставлять (для не-Qwen моделей, напр. Llama/Mistral на vLLM).
+  thinking_style: qwen
+  # Таймаут одного HTTP-запроса, сек.
+  request_timeout: 600
+
+rlm:
+  max_iterations: 15              # максимум ходов корневой модели
+  wall_clock_timeout: 1800        # общий таймаут одного вопроса, сек
+  repl_output_limit: 3000         # усечение stdout одного выполнения, символов
+  max_depth: 1                    # глубина рекурсии (как в статье)
+  recursive_chunk_limit: 24000    # макс. размер фрагмента, передаваемого в llm() внутри REPL, символов
+
+rag:
+  embedding_backend: "lmstudio"   # "lmstudio" (эмбеддинги через LM Studio) или "sentence_transformers" (офлайн)
+  embedding_model: "BAAI/bge-small-en-v1.5"    # для sentence_transformers
+  lmstudio_embedding_model: "text-embedding-intfloat-multilingual-e5-large-instruct"  # если backend=lmstudio
+  chunk_size: 1200               # символов в чанке
+  chunk_overlap: 200
+  top_k: 6
+
+naive:
+  # Бюджет контекста для «всё в окно». Должен быть < окна модели в LM Studio
+  # (32000 ток.) с запасом на system+вопрос+ответ (max_tokens=2048). На задачах
+  # длиннее бюджета документ честно усекается — это и есть предел подхода.
+  context_token_budget: 29000
+
+eval:
+  context_lengths: [8000, 32000, 128000]   # целевые длины контекста (символы)
+  tasks_per_type: 4              # задач на каждый тип (single_hop / multi_hop / aggregation)
+  seed: 42
+  results_path: "results.json"
+
+eval_complex:                    # сложный датасет «договоры» (--dataset complex)
+  context_lengths: [8000, 32000, 128000]
+  tasks_per_type: 4              # 4 типа × 4 × 3 длины = 48 задач
+  seed: 42
+  results_path: "results_complex.json"

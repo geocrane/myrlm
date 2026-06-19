@@ -1,0 +1,54 @@
+# Пример конфига для запуска на другом ПК: основная модель — через vLLM,
+# эмбеддер — скачан локально в ./models/.
+#
+# Использование:
+#   export RLM_CONFIG=$(pwd)/config.vllm.yaml      # или передать путь явно
+#   python -m eval.run_experiment --dataset complex
+# либо выбрать этот файл в ноутбуке notebooks/run_experiment.ipynb.
+#
+# Запуск vLLM (пример):
+#   vllm serve Qwen/Qwen3-32B --host 0.0.0.0 --port 8000 --max-model-len 40000
+
+llm:
+  # OpenAI-совместимый эндпоинт vLLM. Поменяй host/порт под свой сервер.
+  base_url: "http://localhost:8000/v1"
+  api_key: "EMPTY"                # vLLM по умолчанию ключ не проверяет (или задай свой)
+  model: "Qwen/Qwen3-32B"         # ИМЯ РОВНО как в `vllm serve` (GET /v1/models)
+  temperature: 0.3
+  max_tokens: 2048
+  enable_thinking: false
+  thinking_style: qwen            # qwen для Qwen3/3.5; none для не-Qwen моделей
+  request_timeout: 600
+
+rlm:
+  max_iterations: 15
+  wall_clock_timeout: 1800
+  repl_output_limit: 3000
+  max_depth: 1
+  recursive_chunk_limit: 24000
+
+rag:
+  embedding_backend: "sentence_transformers"   # локальная модель (не через сервер)
+  # Путь к скачанной модели (см. scripts/download_embedder.py). «e5» в пути включает
+  # корректные префиксы query:/passage:.
+  embedding_model: "./models/multilingual-e5-large-instruct"
+  lmstudio_embedding_model: "text-embedding-intfloat-multilingual-e5-large-instruct"
+  chunk_size: 1200
+  chunk_overlap: 200
+  top_k: 6
+
+naive:
+  # Согласуй с --max-model-len vLLM: бюджет < окна минус место под ответ и служебку.
+  context_token_budget: 36000
+
+eval:
+  context_lengths: [8000, 32000, 128000]
+  tasks_per_type: 4
+  seed: 42
+  results_path: "results.json"
+
+eval_complex:
+  context_lengths: [8000, 32000, 128000]
+  tasks_per_type: 4
+  seed: 42
+  results_path: "results_complex.json"

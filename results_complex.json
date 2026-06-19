@@ -1,0 +1,3474 @@
+{
+  "config": {
+    "lengths": [
+      8000,
+      32000,
+      128000
+    ],
+    "per_type": 4,
+    "methods": [
+      "rlm",
+      "rag",
+      "naive"
+    ]
+  },
+  "elapsed_total": 26273.3,
+  "records": [
+    {
+      "task_id": "range_1",
+      "type": "range_count",
+      "char_len": 8112,
+      "question": "Сколько договоров заключено на сумму от 384000 до 1422000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "17",
+      "gold": "17",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 55.49,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 6607,
+        "completion_tokens": 1061,
+        "total_tokens": 7668,
+        "total_seconds": 55.48,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "range_1",
+      "type": "range_count",
+      "char_len": 8112,
+      "question": "Сколько договоров заключено на сумму от 384000 до 1422000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "17",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 93.98,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2958,
+        "completion_tokens": 2048,
+        "total_tokens": 5006,
+        "total_seconds": 93.15,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_1",
+      "type": "range_count",
+      "char_len": 8112,
+      "question": "Сколько договоров заключено на сумму от 384000 до 1422000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "17",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 106.75,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3393,
+        "completion_tokens": 2048,
+        "total_tokens": 5441,
+        "total_seconds": 106.75,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_2",
+      "type": "range_count",
+      "char_len": 8152,
+      "question": "Сколько договоров заключено на сумму от 351000 до 1446000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "20",
+      "gold": "20",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 90.98,
+      "iterations": 6,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 6,
+        "prompt_tokens": 10647,
+        "completion_tokens": 1492,
+        "total_tokens": 12139,
+        "total_seconds": 90.96,
+        "by_role": {
+          "root": 6
+        }
+      }
+    },
+    {
+      "task_id": "range_2",
+      "type": "range_count",
+      "char_len": 8152,
+      "question": "Сколько договоров заключено на сумму от 351000 до 1446000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "20",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 108.74,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2983,
+        "completion_tokens": 2048,
+        "total_tokens": 5031,
+        "total_seconds": 107.91,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_2",
+      "type": "range_count",
+      "char_len": 8152,
+      "question": "Сколько договоров заключено на сумму от 351000 до 1446000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "20",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 106.53,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3422,
+        "completion_tokens": 2048,
+        "total_tokens": 5470,
+        "total_seconds": 106.53,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_3",
+      "type": "range_count",
+      "char_len": 8111,
+      "question": "Сколько договоров заключено на сумму от 341000 до 1464000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "19",
+      "gold": "19",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 49.72,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 4507,
+        "completion_tokens": 856,
+        "total_tokens": 5363,
+        "total_seconds": 49.72,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "range_3",
+      "type": "range_count",
+      "char_len": 8111,
+      "question": "Сколько договоров заключено на сумму от 341000 до 1464000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "19",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 105.09,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2984,
+        "completion_tokens": 2048,
+        "total_tokens": 5032,
+        "total_seconds": 104.33,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_3",
+      "type": "range_count",
+      "char_len": 8111,
+      "question": "Сколько договоров заключено на сумму от 341000 до 1464000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "19",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 106.59,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3390,
+        "completion_tokens": 2048,
+        "total_tokens": 5438,
+        "total_seconds": 106.59,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_4",
+      "type": "range_count",
+      "char_len": 8129,
+      "question": "Сколько договоров заключено на сумму от 180000 до 1463000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "23",
+      "gold": "23",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 87.4,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 6529,
+        "completion_tokens": 1675,
+        "total_tokens": 8204,
+        "total_seconds": 87.4,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "range_4",
+      "type": "range_count",
+      "char_len": 8129,
+      "question": "Сколько договоров заключено на сумму от 180000 до 1463000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "23",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 102.76,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2994,
+        "completion_tokens": 2048,
+        "total_tokens": 5042,
+        "total_seconds": 101.95,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_4",
+      "type": "range_count",
+      "char_len": 8129,
+      "question": "Сколько договоров заключено на сумму от 180000 до 1463000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "23",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 107.25,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3399,
+        "completion_tokens": 2048,
+        "total_tokens": 5447,
+        "total_seconds": 107.25,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_5",
+      "type": "join_lookup",
+      "char_len": 8117,
+      "question": "Назови контрагента и ответственного по договору №D-9564. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Кедр», Ответственный: Лиора",
+      "gold": "Кедр | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 19.88,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 2059,
+        "completion_tokens": 369,
+        "total_tokens": 2428,
+        "total_seconds": 19.87,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "join_5",
+      "type": "join_lookup",
+      "char_len": 8117,
+      "question": "Назови контрагента и ответственного по договору №D-9564. Укажи оба значения.",
+      "method": "rag",
+      "answer": "Контрагент: ООО «Кедр», Ответственный: Лиора.",
+      "gold": "Кедр | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 55.51,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2983,
+        "completion_tokens": 918,
+        "total_tokens": 3901,
+        "total_seconds": 54.76,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_5",
+      "type": "join_lookup",
+      "char_len": 8117,
+      "question": "Назови контрагента и ответственного по договору №D-9564. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Кедр», Ответственный: Лиора.",
+      "gold": "Кедр | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 47.2,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3383,
+        "completion_tokens": 742,
+        "total_tokens": 4125,
+        "total_seconds": 47.2,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_6",
+      "type": "join_lookup",
+      "char_len": 8133,
+      "question": "Назови контрагента и ответственного по договору №D-8311. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Зенит», Ответственный: Сильва",
+      "gold": "Зенит | Сильва",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 31.64,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 2998,
+        "completion_tokens": 607,
+        "total_tokens": 3605,
+        "total_seconds": 31.63,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "join_6",
+      "type": "join_lookup",
+      "char_len": 8133,
+      "question": "Назови контрагента и ответственного по договору №D-8311. Укажи оба значения.",
+      "method": "rag",
+      "answer": "Контрагент: ООО «Зенит», Ответственный: Сильва.",
+      "gold": "Зенит | Сильва",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 44.1,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3109,
+        "completion_tokens": 672,
+        "total_tokens": 3781,
+        "total_seconds": 43.29,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_6",
+      "type": "join_lookup",
+      "char_len": 8133,
+      "question": "Назови контрагента и ответственного по договору №D-8311. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Зенит», ответственный: Сильва.",
+      "gold": "Зенит | Сильва",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 40.0,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3393,
+        "completion_tokens": 571,
+        "total_tokens": 3964,
+        "total_seconds": 39.99,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_7",
+      "type": "join_lookup",
+      "char_len": 8154,
+      "question": "Назови контрагента и ответственного по договору №D-9767. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Сфера», Ответственный: Вестон",
+      "gold": "Сфера | Вестон",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 59.71,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 6395,
+        "completion_tokens": 1083,
+        "total_tokens": 7478,
+        "total_seconds": 59.7,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "join_7",
+      "type": "join_lookup",
+      "char_len": 8154,
+      "question": "Назови контрагента и ответственного по договору №D-9767. Укажи оба значения.",
+      "method": "rag",
+      "answer": "Контрагент: ООО «Сфера», Ответственный: Мирабель.",
+      "gold": "Сфера | Вестон",
+      "correct": false,
+      "judge_method": "all",
+      "elapsed": 40.52,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2991,
+        "completion_tokens": 601,
+        "total_tokens": 3592,
+        "total_seconds": 39.7,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_7",
+      "type": "join_lookup",
+      "char_len": 8154,
+      "question": "Назови контрагента и ответственного по договору №D-9767. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Сфера», Ответственный: Вестон.",
+      "gold": "Сфера | Вестон",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 44.1,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3413,
+        "completion_tokens": 656,
+        "total_tokens": 4069,
+        "total_seconds": 44.1,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_8",
+      "type": "join_lookup",
+      "char_len": 8150,
+      "question": "Назови контрагента и ответственного по договору №D-7499. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Темп», Ответственный: Лиора",
+      "gold": "Темп | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 27.46,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 2959,
+        "completion_tokens": 546,
+        "total_tokens": 3505,
+        "total_seconds": 27.45,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "join_8",
+      "type": "join_lookup",
+      "char_len": 8150,
+      "question": "Назови контрагента и ответственного по договору №D-7499. Укажи оба значения.",
+      "method": "rag",
+      "answer": "В предоставленных фрагментах нет информации о договоре №D-7499.",
+      "gold": "Темп | Лиора",
+      "correct": false,
+      "judge_method": "all",
+      "elapsed": 69.93,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3009,
+        "completion_tokens": 1240,
+        "total_tokens": 4249,
+        "total_seconds": 69.2,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_8",
+      "type": "join_lookup",
+      "char_len": 8150,
+      "question": "Назови контрагента и ответственного по договору №D-7499. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Темп», Ответственный: Лиора.",
+      "gold": "Темп | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 38.33,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3376,
+        "completion_tokens": 521,
+        "total_tokens": 3897,
+        "total_seconds": 38.33,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_9",
+      "type": "violation_flag",
+      "char_len": 8134,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "['D-5560', 'D-5503', 'D-8272', 'D-3999', 'D-8231', 'D-4228', 'D-5794', 'D-7367', 'D-4798', 'D-9369', 'D-6225', 'D-5873']",
+      "gold": "D-3999, D-4228, D-4798, D-5503, D-5560, D-5794, D-5873, D-6225, D-7367, D-8231, D-8272, D-9369",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 147.77,
+      "iterations": 11,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 11,
+        "prompt_tokens": 20732,
+        "completion_tokens": 2478,
+        "total_tokens": 23210,
+        "total_seconds": 147.75,
+        "by_role": {
+          "root": 11
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_9",
+      "type": "violation_flag",
+      "char_len": 8134,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-3999, D-4228, D-4798, D-5503, D-5560, D-5794, D-5873, D-6225, D-7367, D-8231, D-8272, D-9369",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 110.3,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3013,
+        "completion_tokens": 2048,
+        "total_tokens": 5061,
+        "total_seconds": 109.43,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_9",
+      "type": "violation_flag",
+      "char_len": 8134,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-5560, D-5503, D-8272, D-3999, D-8231, D-4228, D-5794, D-7367, D-4798, D-9369, D-6225, D-5873",
+      "gold": "D-3999, D-4228, D-4798, D-5503, D-5560, D-5794, D-5873, D-6225, D-7367, D-8231, D-8272, D-9369",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 110.15,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3373,
+        "completion_tokens": 1990,
+        "total_tokens": 5363,
+        "total_seconds": 110.15,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_10",
+      "type": "violation_flag",
+      "char_len": 8140,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "[]",
+      "gold": "D-1721, D-2785, D-3141, D-3466, D-4909, D-6211, D-6828, D-8483",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 59.1,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 6249,
+        "completion_tokens": 1057,
+        "total_tokens": 7306,
+        "total_seconds": 59.1,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_10",
+      "type": "violation_flag",
+      "char_len": 8140,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1721, D-2785, D-3141, D-3466, D-4909, D-6211, D-6828, D-8483",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 108.74,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2993,
+        "completion_tokens": 2048,
+        "total_tokens": 5041,
+        "total_seconds": 107.91,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_10",
+      "type": "violation_flag",
+      "char_len": 8140,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1721, D-2785, D-3141, D-3466, D-4909, D-6211, D-6828, D-8483",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 99.61,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3395,
+        "completion_tokens": 2048,
+        "total_tokens": 5443,
+        "total_seconds": 99.61,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_11",
+      "type": "violation_flag",
+      "char_len": 8106,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-2525, D-8113, D-8758",
+      "gold": "D-4471, D-4695, D-5205, D-5313, D-6500, D-7874, D-8113, D-8750, D-8869, D-9849",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 246.61,
+      "iterations": 12,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 12,
+        "prompt_tokens": 32914,
+        "completion_tokens": 4843,
+        "total_tokens": 37757,
+        "total_seconds": 246.54,
+        "by_role": {
+          "root": 12
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_11",
+      "type": "violation_flag",
+      "char_len": 8106,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-4471, D-4695, D-5205, D-5313, D-6500, D-7874, D-8113, D-8750, D-8869, D-9849",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 94.66,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3023,
+        "completion_tokens": 2048,
+        "total_tokens": 5071,
+        "total_seconds": 93.96,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_11",
+      "type": "violation_flag",
+      "char_len": 8106,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-4471, D-4695, D-5205, D-5313, D-6500, D-7874, D-8113, D-8750, D-8869, D-9849",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 94.97,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3373,
+        "completion_tokens": 2048,
+        "total_tokens": 5421,
+        "total_seconds": 94.97,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_12",
+      "type": "violation_flag",
+      "char_len": 8124,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "",
+      "gold": "D-1076, D-4122, D-4787, D-6416, D-7253, D-7713, D-9031, D-9154",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 62.85,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 6336,
+        "completion_tokens": 1219,
+        "total_tokens": 7555,
+        "total_seconds": 62.84,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_12",
+      "type": "violation_flag",
+      "char_len": 8124,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1076, D-4122, D-4787, D-6416, D-7253, D-7713, D-9031, D-9154",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 95.5,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3111,
+        "completion_tokens": 2048,
+        "total_tokens": 5159,
+        "total_seconds": 94.77,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_12",
+      "type": "violation_flag",
+      "char_len": 8124,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-7253, D-9154, D-9031, D-4787, D-7713, D-6416, D-1076, D-4122",
+      "gold": "D-1076, D-4122, D-4787, D-6416, D-7253, D-7713, D-9031, D-9154",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 82.68,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3373,
+        "completion_tokens": 1780,
+        "total_tokens": 5153,
+        "total_seconds": 82.68,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_13",
+      "type": "violation_rule",
+      "char_len": 8120,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-2117, D-4218, D-1718, D-4994, D-2890, D-1654, D-6657, D-3381, D-3847, D-1144, D-9975, D-3742, D-3131, D-7349",
+      "gold": "D-1144, D-1654, D-1718, D-2117, D-2890, D-3131, D-3381, D-3742, D-3847, D-4218, D-4994, D-6657, D-7349, D-9975",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 102.8,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 12609,
+        "completion_tokens": 2157,
+        "total_tokens": 14766,
+        "total_seconds": 102.79,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_13",
+      "type": "violation_rule",
+      "char_len": 8120,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1144, D-1654, D-1718, D-2117, D-2890, D-3131, D-3381, D-3742, D-3847, D-4218, D-4994, D-6657, D-7349, D-9975",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 92.99,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3034,
+        "completion_tokens": 2048,
+        "total_tokens": 5082,
+        "total_seconds": 92.26,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_13",
+      "type": "violation_rule",
+      "char_len": 8120,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1144, D-1654, D-1718, D-2117, D-2890, D-3131, D-3381, D-3742, D-3847, D-4218, D-4994, D-6657, D-7349, D-9975",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 93.55,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3456,
+        "completion_tokens": 2048,
+        "total_tokens": 5504,
+        "total_seconds": 93.55,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_14",
+      "type": "violation_rule",
+      "char_len": 8156,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-5281, D-2404, D-5314",
+      "gold": "D-1019, D-2404, D-3338, D-4768, D-4834, D-5281, D-5314, D-6934, D-8028, D-8429, D-8889, D-8976, D-9399, D-9464, D-9561",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 425.91,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 68073,
+        "completion_tokens": 8771,
+        "total_tokens": 76844,
+        "total_seconds": 425.87,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_14",
+      "type": "violation_rule",
+      "char_len": 8156,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1019, D-2404, D-3338, D-4768, D-4834, D-5281, D-5314, D-6934, D-8028, D-8429, D-8889, D-8976, D-9399, D-9464, D-9561",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 98.99,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3136,
+        "completion_tokens": 2048,
+        "total_tokens": 5184,
+        "total_seconds": 98.28,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_14",
+      "type": "violation_rule",
+      "char_len": 8156,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1019, D-2404, D-3338, D-4768, D-4834, D-5281, D-5314, D-6934, D-8028, D-8429, D-8889, D-8976, D-9399, D-9464, D-9561",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 103.8,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3476,
+        "completion_tokens": 2048,
+        "total_tokens": 5524,
+        "total_seconds": 103.8,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_15",
+      "type": "violation_rule",
+      "char_len": 8102,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "```python\nimport re\n\n# Простой подход: ищем все строки с номером, категорией и суммой\npattern = r'=== ДОГОВОР №(\\w+) ===.*?Категория: (\\w+).*?Сумма: ([\\d\\s]+)'\nmatches = re.findall(pattern, context, re.DOTALL)\nprint(f'Найдено договоров: {len(matches)}')\nfor num, cat, amount in matches[:20]:\n    print(f'{num}: {cat}, {amount}')\n\n# Ищем раздел с регламентом лимитов\nlimit_section = re.search(r'=== РЕГЛАМЕНТ ЛИМИТОВ ===.*?(?====|$)', context, re.DOTALL)\nif limit_section:\n    limits = {}\n    for match in re.finditer(r'Лимит по категории «(\\w+)» — (\\d+).*?₽\\.', limit_section.group()):\n        cat, lim = match.groups()\n        limits[cat] = int(lim)\n    print('\\nЛимиты:', limits)\n\n# Находим нарушающие лимит договоры\nviolated = []\nfor num, cat, amount in matches:\n    if cat in limits and int(amount) > limits[cat]:\n        violated.append(num)\n        print(f'Нарушение: {num} ({cat}), сумма {amount} > лимит {limits[cat]}')\n\nprint('\\nНарушающие лимит договоры:', ', '.join(violated))\n```",
+      "gold": "D-1881, D-1983, D-3048, D-3071, D-3101, D-3893, D-3947, D-4449, D-4450, D-5413, D-5444, D-6689, D-6752, D-8537, D-8901, D-9041",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 492.03,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 99541,
+        "completion_tokens": 9140,
+        "total_tokens": 108681,
+        "total_seconds": 491.97,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_15",
+      "type": "violation_rule",
+      "char_len": 8102,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1881, D-1983, D-3048, D-3071, D-3101, D-3893, D-3947, D-4449, D-4450, D-5413, D-5444, D-6689, D-6752, D-8537, D-8901, D-9041",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 99.39,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3080,
+        "completion_tokens": 2048,
+        "total_tokens": 5128,
+        "total_seconds": 98.62,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_15",
+      "type": "violation_rule",
+      "char_len": 8102,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1881, D-1983, D-3048, D-3071, D-3101, D-3893, D-3947, D-4449, D-4450, D-5413, D-5444, D-6689, D-6752, D-8537, D-8901, D-9041",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 100.38,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3452,
+        "completion_tokens": 2048,
+        "total_tokens": 5500,
+        "total_seconds": 100.38,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_16",
+      "type": "violation_rule",
+      "char_len": 8142,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-1717, D-7348, D-5660, D-4109, D-2759, D-9747, D-1306, D-5193, D-3627, D-2705, D-1646, D-7814, D-2617, D-6285",
+      "gold": "D-1306, D-1646, D-1717, D-2617, D-2705, D-2759, D-3627, D-4109, D-5193, D-5660, D-6285, D-7348, D-7814, D-9747",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 160.27,
+      "iterations": 7,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 21614,
+        "completion_tokens": 2833,
+        "total_tokens": 24447,
+        "total_seconds": 160.25,
+        "by_role": {
+          "root": 7
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_16",
+      "type": "violation_rule",
+      "char_len": 8142,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1306, D-1646, D-1717, D-2617, D-2705, D-2759, D-3627, D-4109, D-5193, D-5660, D-6285, D-7348, D-7814, D-9747",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 97.46,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3161,
+        "completion_tokens": 2048,
+        "total_tokens": 5209,
+        "total_seconds": 96.65,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_16",
+      "type": "violation_rule",
+      "char_len": 8142,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1306, D-1646, D-1717, D-2617, D-2705, D-2759, D-3627, D-4109, D-5193, D-5660, D-6285, D-7348, D-7814, D-9747",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 93.45,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3457,
+        "completion_tokens": 2048,
+        "total_tokens": 5505,
+        "total_seconds": 93.45,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_17",
+      "type": "range_count",
+      "char_len": 32557,
+      "question": "Сколько договоров заключено на сумму от 324000 до 1160000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "17",
+      "gold": "17",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 80.62,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 7711,
+        "completion_tokens": 1694,
+        "total_tokens": 9405,
+        "total_seconds": 80.61,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "range_17",
+      "type": "range_count",
+      "char_len": 32557,
+      "question": "Сколько договоров заключено на сумму от 324000 до 1160000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "17",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 96.61,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2735,
+        "completion_tokens": 2048,
+        "total_tokens": 4783,
+        "total_seconds": 94.15,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_17",
+      "type": "range_count",
+      "char_len": 32557,
+      "question": "Сколько договоров заключено на сумму от 324000 до 1160000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "17",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 129.22,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11112,
+        "completion_tokens": 2048,
+        "total_tokens": 13160,
+        "total_seconds": 129.22,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_18",
+      "type": "range_count",
+      "char_len": 32545,
+      "question": "Сколько договоров заключено на сумму от 381000 до 1248000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "18",
+      "gold": "18",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 220.64,
+      "iterations": 11,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 11,
+        "prompt_tokens": 28694,
+        "completion_tokens": 4203,
+        "total_tokens": 32897,
+        "total_seconds": 220.62,
+        "by_role": {
+          "root": 11
+        }
+      }
+    },
+    {
+      "task_id": "range_18",
+      "type": "range_count",
+      "char_len": 32545,
+      "question": "Сколько договоров заключено на сумму от 381000 до 1248000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "18",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 100.73,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2649,
+        "completion_tokens": 2048,
+        "total_tokens": 4697,
+        "total_seconds": 97.98,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_18",
+      "type": "range_count",
+      "char_len": 32545,
+      "question": "Сколько договоров заключено на сумму от 381000 до 1248000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "18",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 136.17,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11089,
+        "completion_tokens": 2048,
+        "total_tokens": 13137,
+        "total_seconds": 136.17,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_19",
+      "type": "range_count",
+      "char_len": 32553,
+      "question": "Сколько договоров заключено на сумму от 207000 до 1464000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "21",
+      "gold": "21",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 63.88,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 8050,
+        "completion_tokens": 1095,
+        "total_tokens": 9145,
+        "total_seconds": 63.88,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "range_19",
+      "type": "range_count",
+      "char_len": 32553,
+      "question": "Сколько договоров заключено на сумму от 207000 до 1464000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "21",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 103.49,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2652,
+        "completion_tokens": 2048,
+        "total_tokens": 4700,
+        "total_seconds": 100.72,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_19",
+      "type": "range_count",
+      "char_len": 32553,
+      "question": "Сколько договоров заключено на сумму от 207000 до 1464000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "21",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 126.54,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11152,
+        "completion_tokens": 2048,
+        "total_tokens": 13200,
+        "total_seconds": 126.54,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_20",
+      "type": "range_count",
+      "char_len": 32540,
+      "question": "Сколько договоров заключено на сумму от 65000 до 1215000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "20",
+      "gold": "20",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 59.09,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 8118,
+        "completion_tokens": 1131,
+        "total_tokens": 9249,
+        "total_seconds": 59.09,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "range_20",
+      "type": "range_count",
+      "char_len": 32540,
+      "question": "Сколько договоров заключено на сумму от 65000 до 1215000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "20",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 96.05,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2659,
+        "completion_tokens": 2048,
+        "total_tokens": 4707,
+        "total_seconds": 93.54,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_20",
+      "type": "range_count",
+      "char_len": 32540,
+      "question": "Сколько договоров заключено на сумму от 65000 до 1215000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "20",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 136.48,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11147,
+        "completion_tokens": 2048,
+        "total_tokens": 13195,
+        "total_seconds": 136.48,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_21",
+      "type": "join_lookup",
+      "char_len": 32562,
+      "question": "Назови контрагента и ответственного по договору №D-5046. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Вектор», Ответственный: Лиора",
+      "gold": "Вектор | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 22.22,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 2407,
+        "completion_tokens": 341,
+        "total_tokens": 2748,
+        "total_seconds": 22.21,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "join_21",
+      "type": "join_lookup",
+      "char_len": 32562,
+      "question": "Назови контрагента и ответственного по договору №D-5046. Укажи оба значения.",
+      "method": "rag",
+      "answer": "В предоставленных фрагментах информации о договоре №D-5046 нет.",
+      "gold": "Вектор | Лиора",
+      "correct": false,
+      "judge_method": "all",
+      "elapsed": 48.4,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2703,
+        "completion_tokens": 837,
+        "total_tokens": 3540,
+        "total_seconds": 45.72,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_21",
+      "type": "join_lookup",
+      "char_len": 32562,
+      "question": "Назови контрагента и ответственного по договору №D-5046. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Вектор», Ответственный: Лиора.",
+      "gold": "Вектор | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 67.11,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11147,
+        "completion_tokens": 501,
+        "total_tokens": 11648,
+        "total_seconds": 67.11,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_22",
+      "type": "join_lookup",
+      "char_len": 32532,
+      "question": "Назови контрагента и ответственного по договору №D-3003. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Зенит», Ответственный: Мирабель",
+      "gold": "Зенит | Мирабель",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 35.22,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 3110,
+        "completion_tokens": 600,
+        "total_tokens": 3710,
+        "total_seconds": 35.22,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "join_22",
+      "type": "join_lookup",
+      "char_len": 32532,
+      "question": "Назови контрагента и ответственного по договору №D-3003. Укажи оба значения.",
+      "method": "rag",
+      "answer": "Контрагент: ООО «Зенит», Ответственный: Мирабель.",
+      "gold": "Зенит | Мирабель",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 54.63,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2697,
+        "completion_tokens": 985,
+        "total_tokens": 3682,
+        "total_seconds": 51.89,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_22",
+      "type": "join_lookup",
+      "char_len": 32532,
+      "question": "Назови контрагента и ответственного по договору №D-3003. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Зенит», Ответственный: Мирабель.",
+      "gold": "Зенит | Мирабель",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 79.25,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11088,
+        "completion_tokens": 768,
+        "total_tokens": 11856,
+        "total_seconds": 79.25,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_23",
+      "type": "join_lookup",
+      "char_len": 32542,
+      "question": "Назови контрагента и ответственного по договору №D-7060. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Темп», Ответственный: Нола",
+      "gold": "Темп | Нола",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 19.63,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1987,
+        "completion_tokens": 367,
+        "total_tokens": 2354,
+        "total_seconds": 19.63,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "join_23",
+      "type": "join_lookup",
+      "char_len": 32542,
+      "question": "Назови контрагента и ответственного по договору №D-7060. Укажи оба значения.",
+      "method": "rag",
+      "answer": "Контрагент: ООО «Темп», Ответственный: Нола.",
+      "gold": "Темп | Нола",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 43.66,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2615,
+        "completion_tokens": 770,
+        "total_tokens": 3385,
+        "total_seconds": 40.91,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_23",
+      "type": "join_lookup",
+      "char_len": 32542,
+      "question": "Назови контрагента и ответственного по договору №D-7060. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Темп», Ответственный: Нола.",
+      "gold": "Темп | Нола",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 78.31,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11137,
+        "completion_tokens": 734,
+        "total_tokens": 11871,
+        "total_seconds": 78.31,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_24",
+      "type": "join_lookup",
+      "char_len": 32544,
+      "question": "Назови контрагента и ответственного по договору №D-5799. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Аксиома», Ответственный: Мирабель",
+      "gold": "Аксиома | Мирабель",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 49.43,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 4415,
+        "completion_tokens": 972,
+        "total_tokens": 5387,
+        "total_seconds": 49.42,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "join_24",
+      "type": "join_lookup",
+      "char_len": 32544,
+      "question": "Назови контрагента и ответственного по договору №D-5799. Укажи оба значения.",
+      "method": "rag",
+      "answer": "",
+      "gold": "Аксиома | Мирабель",
+      "correct": false,
+      "judge_method": "all",
+      "elapsed": 104.8,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2667,
+        "completion_tokens": 2048,
+        "total_tokens": 4715,
+        "total_seconds": 102.02,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_24",
+      "type": "join_lookup",
+      "char_len": 32544,
+      "question": "Назови контрагента и ответственного по договору №D-5799. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Аксиома», Ответственный: Мирабель.",
+      "gold": "Аксиома | Мирабель",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 72.39,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11107,
+        "completion_tokens": 647,
+        "total_tokens": 11754,
+        "total_seconds": 72.39,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_25",
+      "type": "violation_flag",
+      "char_len": 32585,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-8998",
+      "gold": "D-1255, D-1969, D-5128, D-7177, D-8772, D-8998, D-9162",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 115.42,
+      "iterations": 8,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 8,
+        "prompt_tokens": 13670,
+        "completion_tokens": 2176,
+        "total_tokens": 15846,
+        "total_seconds": 115.38,
+        "by_role": {
+          "root": 8
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_25",
+      "type": "violation_flag",
+      "char_len": 32585,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "D-1255, D-1969, D-7177, D-9162, D-5128",
+      "gold": "D-1255, D-1969, D-5128, D-7177, D-8772, D-8998, D-9162",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 96.34,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2670,
+        "completion_tokens": 1811,
+        "total_tokens": 4481,
+        "total_seconds": 93.47,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_25",
+      "type": "violation_flag",
+      "char_len": 32585,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-8998, D-8772, D-1255, D-1969, D-7177, D-9162, D-5128",
+      "gold": "D-1255, D-1969, D-5128, D-7177, D-8772, D-8998, D-9162",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 95.33,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11120,
+        "completion_tokens": 1151,
+        "total_tokens": 12271,
+        "total_seconds": 95.33,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_26",
+      "type": "violation_flag",
+      "char_len": 32579,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "```python\nimport re\n\n# Ищем все упоминания статусов нарушений с широким контекстом вокруг них\nviolation_full_context = re.findall(r'.*?Статус:.*нарушение.*?(?====|$)', context, re.DOTALL)\nprint('Полный контекст нарушений:', len(violation_full_context))\nfor i, v in enumerate(violation_full_context):\n    print(f'--- Нарушение {i+1} ---')\n    print(repr(v[:600]))\n    print()\n\n# Ищем все упоминания \"Статус:\" и смотрим их окружение\nall_status_lines = re.findall(r'.*?Статус:.*?(?====|$)', context, re.DOTALL)\nprint('Все статусы:', len(all_status_lines))\nfor s in all_status_lines[:30]:\n    print(repr(s[:400]))\n```",
+      "gold": "D-4262, D-5846, D-6622, D-7172, D-8449, D-9512",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 328.71,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 48499,
+        "completion_tokens": 6274,
+        "total_tokens": 54773,
+        "total_seconds": 328.5,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_26",
+      "type": "violation_flag",
+      "char_len": 32579,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "D-5846, D-6622, D-4262",
+      "gold": "D-4262, D-5846, D-6622, D-7172, D-8449, D-9512",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 42.26,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2706,
+        "completion_tokens": 709,
+        "total_tokens": 3415,
+        "total_seconds": 39.63,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_26",
+      "type": "violation_flag",
+      "char_len": 32579,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-4262, D-5846, D-6622, D-7172, D-8449, D-9512",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 143.8,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11142,
+        "completion_tokens": 2048,
+        "total_tokens": 13190,
+        "total_seconds": 143.8,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_27",
+      "type": "violation_flag",
+      "char_len": 32529,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-7043, D-5230, D-3251, D-5056, D-4343, D-6052, D-2572, D-1852",
+      "gold": "D-1852, D-2572, D-3251, D-4343, D-5056, D-5230, D-6052, D-7043",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 366.87,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 50476,
+        "completion_tokens": 6804,
+        "total_tokens": 57280,
+        "total_seconds": 366.68,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_27",
+      "type": "violation_flag",
+      "char_len": 32529,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "D-3251, D-4343, D-6052, D-2572, D-1852",
+      "gold": "D-1852, D-2572, D-3251, D-4343, D-5056, D-5230, D-6052, D-7043",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 84.21,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2766,
+        "completion_tokens": 1615,
+        "total_tokens": 4381,
+        "total_seconds": 81.44,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_27",
+      "type": "violation_flag",
+      "char_len": 32529,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1852, D-2572, D-3251, D-4343, D-5056, D-5230, D-6052, D-7043",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 134.98,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11123,
+        "completion_tokens": 2048,
+        "total_tokens": 13171,
+        "total_seconds": 134.98,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_28",
+      "type": "violation_flag",
+      "char_len": 32546,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-7744, D-4612, D-5612, D-9411, D-2665",
+      "gold": "D-2665, D-4612, D-5612, D-7744, D-9411",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 161.82,
+      "iterations": 10,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 22877,
+        "completion_tokens": 3106,
+        "total_tokens": 25983,
+        "total_seconds": 161.81,
+        "by_role": {
+          "root": 10
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_28",
+      "type": "violation_flag",
+      "char_len": 32546,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-2665, D-4612, D-5612, D-7744, D-9411",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 100.1,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2776,
+        "completion_tokens": 2048,
+        "total_tokens": 4824,
+        "total_seconds": 97.39,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_28",
+      "type": "violation_flag",
+      "char_len": 32546,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-7744, D-4612, D-5612, D-9411, D-2665",
+      "gold": "D-2665, D-4612, D-5612, D-7744, D-9411",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 130.18,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11170,
+        "completion_tokens": 1904,
+        "total_tokens": 13074,
+        "total_seconds": 130.18,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_29",
+      "type": "violation_rule",
+      "char_len": 32573,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-2535, D-9447, D-3705, D-3977, D-5736, D-7606, D-7165, D-5430, D-5982, D-4853, D-5794, D-3594, D-4819, D-1367, D-5696, D-7998, D-2011, D-4757, D-7424",
+      "gold": "D-1367, D-2011, D-2535, D-3594, D-3705, D-3977, D-4757, D-4819, D-4853, D-5430, D-5696, D-5736, D-5794, D-5982, D-7165, D-7424, D-7606, D-7998, D-9447",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 5171.56,
+      "iterations": 13,
+      "stopped_reason": "timeout",
+      "usage": {
+        "calls": 13,
+        "prompt_tokens": 52309,
+        "completion_tokens": 8294,
+        "total_tokens": 60603,
+        "total_seconds": 5171.53,
+        "by_role": {
+          "root": 13
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_29",
+      "type": "violation_rule",
+      "char_len": 32573,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1367, D-2011, D-2535, D-3594, D-3705, D-3977, D-4757, D-4819, D-4853, D-5430, D-5696, D-5736, D-5794, D-5982, D-7165, D-7424, D-7606, D-7998, D-9447",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 80.27,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2632,
+        "completion_tokens": 2048,
+        "total_tokens": 4680,
+        "total_seconds": 77.95,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_29",
+      "type": "violation_rule",
+      "char_len": 32573,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1367, D-2011, D-2535, D-3594, D-3705, D-3977, D-4757, D-4819, D-4853, D-5430, D-5696, D-5736, D-5794, D-5982, D-7165, D-7424, D-7606, D-7998, D-9447",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 115.02,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11213,
+        "completion_tokens": 2048,
+        "total_tokens": 13261,
+        "total_seconds": 115.02,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_30",
+      "type": "violation_rule",
+      "char_len": 32562,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-55, D-1513, D-2551, D-2996, D-4662, D-8993, D-9678, D-10991, D-11994, D-15189, D-15854, D-17171, D-20298, D-20973, D-23654, D-26407, D-26600, D-28028",
+      "gold": "D-1092, D-1199, D-1514, D-1523, D-1722, D-1788, D-1811, D-2055, D-2448, D-3448, D-5174, D-5179, D-5253, D-6234, D-6518, D-7677, D-9040, D-9066",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 301.33,
+      "iterations": 11,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 11,
+        "prompt_tokens": 44603,
+        "completion_tokens": 4935,
+        "total_tokens": 49538,
+        "total_seconds": 301.3,
+        "by_role": {
+          "root": 11
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_30",
+      "type": "violation_rule",
+      "char_len": 32562,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1092, D-1199, D-1514, D-1523, D-1722, D-1788, D-1811, D-2055, D-2448, D-3448, D-5174, D-5179, D-5253, D-6234, D-6518, D-7677, D-9040, D-9066",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 134.62,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2719,
+        "completion_tokens": 2048,
+        "total_tokens": 4767,
+        "total_seconds": 131.39,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_30",
+      "type": "violation_rule",
+      "char_len": 32562,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1092, D-1199, D-1514, D-1523, D-1722, D-1788, D-1811, D-2055, D-2448, D-3448, D-5174, D-5179, D-5253, D-6234, D-6518, D-7677, D-9040, D-9066",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 194.87,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11207,
+        "completion_tokens": 2048,
+        "total_tokens": 13255,
+        "total_seconds": 194.87,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_31",
+      "type": "violation_rule",
+      "char_len": 32579,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "FINAL_VAR(violators_list)",
+      "gold": "D-1166, D-1768, D-2126, D-2766, D-4800, D-5155, D-5597, D-6361, D-6461, D-8008, D-8722",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 501.57,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 52370,
+        "completion_tokens": 6001,
+        "total_tokens": 58371,
+        "total_seconds": 499.86,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_31",
+      "type": "violation_rule",
+      "char_len": 32579,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1166, D-1768, D-2126, D-2766, D-4800, D-5155, D-5597, D-6361, D-6461, D-8008, D-8722",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 160.14,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2754,
+        "completion_tokens": 2048,
+        "total_tokens": 4802,
+        "total_seconds": 156.36,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_31",
+      "type": "violation_rule",
+      "char_len": 32579,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1166, D-1768, D-2126, D-2766, D-4800, D-5155, D-5597, D-6361, D-6461, D-8008, D-8722",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 219.93,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11223,
+        "completion_tokens": 2048,
+        "total_tokens": 13271,
+        "total_seconds": 219.93,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_32",
+      "type": "violation_rule",
+      "char_len": 32540,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "FINAL_VAR(9726,1461,6727,1697,6621,6477,7122,5201,6375,4964,5026,8048,9664,8613,4555,6171)",
+      "gold": "D-1461, D-1697, D-4555, D-4964, D-5026, D-5201, D-6171, D-6375, D-6477, D-6621, D-6727, D-7122, D-8048, D-8613, D-9664, D-9726",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 607.58,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 67203,
+        "completion_tokens": 7333,
+        "total_tokens": 74536,
+        "total_seconds": 607.56,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_32",
+      "type": "violation_rule",
+      "char_len": 32540,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1461, D-1697, D-4555, D-4964, D-5026, D-5201, D-6171, D-6375, D-6477, D-6621, D-6727, D-7122, D-8048, D-8613, D-9664, D-9726",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 163.83,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2690,
+        "completion_tokens": 2048,
+        "total_tokens": 4738,
+        "total_seconds": 159.96,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_32",
+      "type": "violation_rule",
+      "char_len": 32540,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1461, D-1697, D-4555, D-4964, D-5026, D-5201, D-6171, D-6375, D-6477, D-6621, D-6727, D-7122, D-8048, D-8613, D-9664, D-9726",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 226.41,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 11181,
+        "completion_tokens": 2048,
+        "total_tokens": 13229,
+        "total_seconds": 226.41,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_33",
+      "type": "range_count",
+      "char_len": 130272,
+      "question": "Сколько договоров заключено на сумму от 300000 до 1025000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "15",
+      "gold": "15",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 140.89,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 9334,
+        "completion_tokens": 1580,
+        "total_tokens": 10914,
+        "total_seconds": 140.88,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "range_33",
+      "type": "range_count",
+      "char_len": 130272,
+      "question": "Сколько договоров заключено на сумму от 300000 до 1025000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "15",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 169.64,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2570,
+        "completion_tokens": 2048,
+        "total_tokens": 4618,
+        "total_seconds": 155.28,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_33",
+      "type": "range_count",
+      "char_len": 130272,
+      "question": "Сколько договоров заключено на сумму от 300000 до 1025000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "15",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 479.32,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37488,
+        "completion_tokens": 2048,
+        "total_tokens": 39536,
+        "total_seconds": 479.32,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_34",
+      "type": "range_count",
+      "char_len": 130277,
+      "question": "Сколько договоров заключено на сумму от 547000 до 966000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "10",
+      "gold": "10",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 143.55,
+      "iterations": 6,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 6,
+        "prompt_tokens": 11705,
+        "completion_tokens": 1560,
+        "total_tokens": 13265,
+        "total_seconds": 143.52,
+        "by_role": {
+          "root": 6
+        }
+      }
+    },
+    {
+      "task_id": "range_34",
+      "type": "range_count",
+      "char_len": 130277,
+      "question": "Сколько договоров заключено на сумму от 547000 до 966000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "3",
+      "gold": "10",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 177.19,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2568,
+        "completion_tokens": 2043,
+        "total_tokens": 4611,
+        "total_seconds": 162.13,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_34",
+      "type": "range_count",
+      "char_len": 130277,
+      "question": "Сколько договоров заключено на сумму от 547000 до 966000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "10",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 474.67,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37557,
+        "completion_tokens": 2048,
+        "total_tokens": 39605,
+        "total_seconds": 474.67,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_35",
+      "type": "range_count",
+      "char_len": 130234,
+      "question": "Сколько договоров заключено на сумму от 410000 до 1357000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "16",
+      "gold": "16",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 82.32,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 6304,
+        "completion_tokens": 1068,
+        "total_tokens": 7372,
+        "total_seconds": 82.3,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "range_35",
+      "type": "range_count",
+      "char_len": 130234,
+      "question": "Сколько договоров заключено на сумму от 410000 до 1357000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "",
+      "gold": "16",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 115.66,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2582,
+        "completion_tokens": 2048,
+        "total_tokens": 4630,
+        "total_seconds": 104.71,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_35",
+      "type": "range_count",
+      "char_len": 130234,
+      "question": "Сколько договоров заключено на сумму от 410000 до 1357000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "16",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 276.39,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37656,
+        "completion_tokens": 2048,
+        "total_tokens": 39704,
+        "total_seconds": 276.39,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_36",
+      "type": "range_count",
+      "char_len": 130242,
+      "question": "Сколько договоров заключено на сумму от 500000 до 1445000 ₽ включительно? Ответь одним числом.",
+      "method": "rlm",
+      "answer": "19",
+      "gold": "19",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 175.03,
+      "iterations": 8,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 8,
+        "prompt_tokens": 16850,
+        "completion_tokens": 3947,
+        "total_tokens": 20797,
+        "total_seconds": 175.01,
+        "by_role": {
+          "root": 8
+        }
+      }
+    },
+    {
+      "task_id": "range_36",
+      "type": "range_count",
+      "char_len": 130242,
+      "question": "Сколько договоров заключено на сумму от 500000 до 1445000 ₽ включительно? Ответь одним числом.",
+      "method": "rag",
+      "answer": "4",
+      "gold": "19",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 58.78,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2601,
+        "completion_tokens": 1063,
+        "total_tokens": 3664,
+        "total_seconds": 50.05,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "range_36",
+      "type": "range_count",
+      "char_len": 130242,
+      "question": "Сколько договоров заключено на сумму от 500000 до 1445000 ₽ включительно? Ответь одним числом.",
+      "method": "naive",
+      "answer": "",
+      "gold": "19",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 269.68,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37567,
+        "completion_tokens": 2048,
+        "total_tokens": 39615,
+        "total_seconds": 269.68,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_37",
+      "type": "join_lookup",
+      "char_len": 130234,
+      "question": "Назови контрагента и ответственного по договору №D-4202. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Полюс», Ответственный: Тадеуш",
+      "gold": "Полюс | Тадеуш",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 36.4,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 3283,
+        "completion_tokens": 675,
+        "total_tokens": 3958,
+        "total_seconds": 36.39,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "join_37",
+      "type": "join_lookup",
+      "char_len": 130234,
+      "question": "Назови контрагента и ответственного по договору №D-4202. Укажи оба значения.",
+      "method": "rag",
+      "answer": "В предоставленных фрагментах отсутствует информация о договоре №D-4202.",
+      "gold": "Полюс | Тадеуш",
+      "correct": false,
+      "judge_method": "all",
+      "elapsed": 61.91,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2592,
+        "completion_tokens": 1136,
+        "total_tokens": 3728,
+        "total_seconds": 52.99,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_37",
+      "type": "join_lookup",
+      "char_len": 130234,
+      "question": "Назови контрагента и ответственного по договору №D-4202. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Полюс», Ответственный: Тадеуш.",
+      "gold": "Полюс | Тадеуш",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 207.93,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37508,
+        "completion_tokens": 773,
+        "total_tokens": 38281,
+        "total_seconds": 207.93,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_38",
+      "type": "join_lookup",
+      "char_len": 130244,
+      "question": "Назови контрагента и ответственного по договору №D-1883. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Орион», Ответственный: Брина",
+      "gold": "Орион | Брина",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 29.72,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 2962,
+        "completion_tokens": 580,
+        "total_tokens": 3542,
+        "total_seconds": 29.72,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "join_38",
+      "type": "join_lookup",
+      "char_len": 130244,
+      "question": "Назови контрагента и ответственного по договору №D-1883. Укажи оба значения.",
+      "method": "rag",
+      "answer": "В приведённых фрагментах отсутствует информация о договоре №D-1883.",
+      "gold": "Орион | Брина",
+      "correct": false,
+      "judge_method": "all",
+      "elapsed": 69.92,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2638,
+        "completion_tokens": 1279,
+        "total_tokens": 3917,
+        "total_seconds": 60.86,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_38",
+      "type": "join_lookup",
+      "char_len": 130244,
+      "question": "Назови контрагента и ответственного по договору №D-1883. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Орион», Ответственный: Брина.",
+      "gold": "Орион | Брина",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 201.78,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37441,
+        "completion_tokens": 586,
+        "total_tokens": 38027,
+        "total_seconds": 201.78,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_39",
+      "type": "join_lookup",
+      "char_len": 130241,
+      "question": "Назови контрагента и ответственного по договору №D-6707. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Ритм», Ответственный: Брина",
+      "gold": "Ритм | Брина",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 49.69,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 5487,
+        "completion_tokens": 1029,
+        "total_tokens": 6516,
+        "total_seconds": 49.69,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "join_39",
+      "type": "join_lookup",
+      "char_len": 130241,
+      "question": "Назови контрагента и ответственного по договору №D-6707. Укажи оба значения.",
+      "method": "rag",
+      "answer": "Контрагент: ООО «Ритм», Ответственный: Брина.",
+      "gold": "Ритм | Брина",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 42.55,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2577,
+        "completion_tokens": 596,
+        "total_tokens": 3173,
+        "total_seconds": 33.39,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_39",
+      "type": "join_lookup",
+      "char_len": 130241,
+      "question": "Назови контрагента и ответственного по договору №D-6707. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Ритм», Ответственный: Брина",
+      "gold": "Ритм | Брина",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 196.08,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37464,
+        "completion_tokens": 440,
+        "total_tokens": 37904,
+        "total_seconds": 196.08,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_40",
+      "type": "join_lookup",
+      "char_len": 130248,
+      "question": "Назови контрагента и ответственного по договору №D-6354. Укажи оба значения.",
+      "method": "rlm",
+      "answer": "Контрагент: ООО «Сфера», Ответственный: Лиора",
+      "gold": "Сфера | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 50.63,
+      "iterations": 5,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 5,
+        "prompt_tokens": 6020,
+        "completion_tokens": 995,
+        "total_tokens": 7015,
+        "total_seconds": 50.61,
+        "by_role": {
+          "root": 5
+        }
+      }
+    },
+    {
+      "task_id": "join_40",
+      "type": "join_lookup",
+      "char_len": 130248,
+      "question": "Назови контрагента и ответственного по договору №D-6354. Укажи оба значения.",
+      "method": "rag",
+      "answer": "Контрагент: ООО «Сфера», Ответственный: Лиора.",
+      "gold": "Сфера | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 45.0,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2595,
+        "completion_tokens": 641,
+        "total_tokens": 3236,
+        "total_seconds": 35.74,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "join_40",
+      "type": "join_lookup",
+      "char_len": 130248,
+      "question": "Назови контрагента и ответственного по договору №D-6354. Укажи оба значения.",
+      "method": "naive",
+      "answer": "Контрагент: ООО «Сфера», Ответственный: Лиора.",
+      "gold": "Сфера | Лиора",
+      "correct": true,
+      "judge_method": "all",
+      "elapsed": 227.64,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37365,
+        "completion_tokens": 1059,
+        "total_tokens": 38424,
+        "total_seconds": 227.64,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_41",
+      "type": "violation_flag",
+      "char_len": 130254,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "['D-2151', 'D-1906', 'D-1039', 'D-2819', 'D-4077']",
+      "gold": "D-1039, D-1906, D-2151, D-2819, D-4077",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 173.72,
+      "iterations": 11,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 11,
+        "prompt_tokens": 31417,
+        "completion_tokens": 3356,
+        "total_tokens": 34773,
+        "total_seconds": 173.69,
+        "by_role": {
+          "root": 11
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_41",
+      "type": "violation_flag",
+      "char_len": 130254,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "D-2151, D-1039, D-2819",
+      "gold": "D-1039, D-1906, D-2151, D-2819, D-4077",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 55.08,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2609,
+        "completion_tokens": 928,
+        "total_tokens": 3537,
+        "total_seconds": 46.03,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_41",
+      "type": "violation_flag",
+      "char_len": 130254,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-2151, D-1906, D-1039, D-2819, D-4077",
+      "gold": "D-1039, D-1906, D-2151, D-2819, D-4077",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 262.37,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37533,
+        "completion_tokens": 1621,
+        "total_tokens": 39154,
+        "total_seconds": 262.37,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_42",
+      "type": "violation_flag",
+      "char_len": 130249,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-8120, D-6797, D-7157, D-3968, D-1951, D-9852",
+      "gold": "D-1951, D-3968, D-6797, D-7157, D-8120, D-9852",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 57.04,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 4479,
+        "completion_tokens": 922,
+        "total_tokens": 5401,
+        "total_seconds": 57.02,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_42",
+      "type": "violation_flag",
+      "char_len": 130249,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "D-8120, D-7157, D-1951, D-9852",
+      "gold": "D-1951, D-3968, D-6797, D-7157, D-8120, D-9852",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 84.22,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2608,
+        "completion_tokens": 1224,
+        "total_tokens": 3832,
+        "total_seconds": 73.79,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_42",
+      "type": "violation_flag",
+      "char_len": 130249,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-8120, D-6797, D-7157, D-3968",
+      "gold": "D-1951, D-3968, D-6797, D-7157, D-8120, D-9852",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 318.6,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37433,
+        "completion_tokens": 1267,
+        "total_tokens": 38700,
+        "total_seconds": 318.6,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_43",
+      "type": "violation_flag",
+      "char_len": 130282,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "9574, 8337, 8481",
+      "gold": "D-8337, D-8481, D-9574",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 302.4,
+      "iterations": 12,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 12,
+        "prompt_tokens": 33842,
+        "completion_tokens": 4066,
+        "total_tokens": 37908,
+        "total_seconds": 302.38,
+        "by_role": {
+          "root": 12
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_43",
+      "type": "violation_flag",
+      "char_len": 130282,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "D-8337, D-8481",
+      "gold": "D-8337, D-8481, D-9574",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 90.29,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2585,
+        "completion_tokens": 1020,
+        "total_tokens": 3605,
+        "total_seconds": 77.46,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_43",
+      "type": "violation_flag",
+      "char_len": 130282,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-9574, D-8337, D-8481",
+      "gold": "D-8337, D-8481, D-9574",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 360.25,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37531,
+        "completion_tokens": 1181,
+        "total_tokens": 38712,
+        "total_seconds": 360.25,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_44",
+      "type": "violation_flag",
+      "char_len": 130236,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "Д-9456, Д-8027, Д-2593, Д-5206, Д-2093, Д-1440",
+      "gold": "D-1440, D-2093, D-2593, D-5206, D-8027, D-9456",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 257.37,
+      "iterations": 10,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 19856,
+        "completion_tokens": 3249,
+        "total_tokens": 23105,
+        "total_seconds": 257.26,
+        "by_role": {
+          "root": 10
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_44",
+      "type": "violation_flag",
+      "char_len": 130236,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "rag",
+      "answer": "D-2593",
+      "gold": "D-1440, D-2093, D-2593, D-5206, D-8027, D-9456",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 77.06,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2582,
+        "completion_tokens": 772,
+        "total_tokens": 3354,
+        "total_seconds": 63.77,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_flag_44",
+      "type": "violation_flag",
+      "char_len": 130236,
+      "question": "Перечисли номера всех договоров (вида D-XXXX) со статусом «нарушение». Перечисли через запятую.",
+      "method": "naive",
+      "answer": "D-9456, D-8027, D-2593, D-5206, D-2093, D-1440",
+      "gold": "D-1440, D-2093, D-2593, D-5206, D-8027, D-9456",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 391.87,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37628,
+        "completion_tokens": 1532,
+        "total_tokens": 39160,
+        "total_seconds": 391.87,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_45",
+      "type": "violation_rule",
+      "char_len": 130251,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-1656, D-9030, D-3490, D-7600, D-2362, D-6982, D-1550, D-4296, D-1212, D-9513",
+      "gold": "D-1212, D-1550, D-1656, D-2362, D-3490, D-4296, D-6982, D-7600, D-9030, D-9513",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 265.77,
+      "iterations": 7,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 7,
+        "prompt_tokens": 20012,
+        "completion_tokens": 3343,
+        "total_tokens": 23355,
+        "total_seconds": 265.73,
+        "by_role": {
+          "root": 7
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_45",
+      "type": "violation_rule",
+      "char_len": 130251,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-1212, D-1550, D-1656, D-2362, D-3490, D-4296, D-6982, D-7600, D-9030, D-9513",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 160.06,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2644,
+        "completion_tokens": 2048,
+        "total_tokens": 4692,
+        "total_seconds": 146.31,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_45",
+      "type": "violation_rule",
+      "char_len": 130251,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1212, D-1550, D-1656, D-2362, D-3490, D-4296, D-6982, D-7600, D-9030, D-9513",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 434.26,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37562,
+        "completion_tokens": 2048,
+        "total_tokens": 39610,
+        "total_seconds": 434.26,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_46",
+      "type": "violation_rule",
+      "char_len": 130244,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-7756, D-3941, D-4935, D-5982, D-3725, D-7519",
+      "gold": "D-3725, D-3941, D-4891, D-4935, D-5661, D-5982, D-6293, D-6339, D-6682, D-7086, D-7519, D-7685, D-7756, D-8878",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 454.22,
+      "iterations": 11,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 11,
+        "prompt_tokens": 45574,
+        "completion_tokens": 5728,
+        "total_tokens": 51302,
+        "total_seconds": 454.13,
+        "by_role": {
+          "root": 11
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_46",
+      "type": "violation_rule",
+      "char_len": 130244,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-3725, D-3941, D-4891, D-4935, D-5661, D-5982, D-6293, D-6339, D-6682, D-7086, D-7519, D-7685, D-7756, D-8878",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 154.51,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2663,
+        "completion_tokens": 2048,
+        "total_tokens": 4711,
+        "total_seconds": 141.04,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_46",
+      "type": "violation_rule",
+      "char_len": 130244,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "В документе отсутствует информация о лимитах по категориям договоров и регламенте их нарушения. Документ содержит только данные о самих договорах (номера, контрагенты, суммы, категории, статусы), но не содержит информации о предельных суммах для каждой категории или правил определения нарушения лимитов.\n\nПоэтому ответить на вопрос невозможно — в документе нет данных о лимитах и критериях их нарушения.",
+      "gold": "D-3725, D-3941, D-4891, D-4935, D-5661, D-5982, D-6293, D-6339, D-6682, D-7086, D-7519, D-7685, D-7756, D-8878",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 333.1,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37505,
+        "completion_tokens": 908,
+        "total_tokens": 38413,
+        "total_seconds": 333.1,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_47",
+      "type": "violation_rule",
+      "char_len": 130252,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "D-4597,D-3409,D-3534,D-2536,D-8285,D-7874,D-4968,D-3726,D-4583,D-8788,D-4525",
+      "gold": "D-2536, D-3409, D-3534, D-3726, D-4525, D-4583, D-4597, D-4968, D-7874, D-8285, D-8788",
+      "correct": true,
+      "judge_method": "set",
+      "elapsed": 504.43,
+      "iterations": 13,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 13,
+        "prompt_tokens": 49259,
+        "completion_tokens": 6608,
+        "total_tokens": 55867,
+        "total_seconds": 504.39,
+        "by_role": {
+          "root": 13
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_47",
+      "type": "violation_rule",
+      "char_len": 130252,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "",
+      "gold": "D-2536, D-3409, D-3534, D-3726, D-4525, D-4583, D-4597, D-4968, D-7874, D-8285, D-8788",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 162.25,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2648,
+        "completion_tokens": 2048,
+        "total_tokens": 4696,
+        "total_seconds": 148.75,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_47",
+      "type": "violation_rule",
+      "char_len": 130252,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "В документе нет информации о лимитах для каждой категории договоров, поэтому определить нарушающие лимит договоры невозможно.",
+      "gold": "D-2536, D-3409, D-3534, D-3726, D-4525, D-4583, D-4597, D-4968, D-7874, D-8285, D-8788",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 374.17,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37491,
+        "completion_tokens": 1365,
+        "total_tokens": 38856,
+        "total_seconds": 374.17,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_48",
+      "type": "violation_rule",
+      "char_len": 130256,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rlm",
+      "answer": "```python\nimport re\n\n# Ищем строки с договорами и их суммами (простой паттерн)\ncontract_sums = re.findall(r'D-\\d+.*?(\\d+)\\s*руб', context)\nprint('Договоры со суммами:', len(contract_sums))\nfor c in contract_sums[:30]:\n    print(c[:150])\n\n# Ищем строки с категориями и лимитами\nlimit_lines = re.findall(r'[Лл]имит по категории[\"']?(.*?)[\"']?.*?(\\d+)', context)\nprint('\\nКатегории и лимиты:', len(limit_lines))\nfor l in limit_lines:\n    print(l[0], '—', l[1])\n\n# Ищем строки с договорами и категориями (без кавычек)\ncontract_cats = re.findall(r'D-\\d+.*?Категория.+?(?:«|\")([^\"»]+)(?:»|\")?.*?\\d+', context)\nprint('\\nДоговоры с категориями:', len(contract_cats))\nfor c in contract_cats[:30]:\n    print(c[:150])\n```",
+      "gold": "D-1244, D-2006, D-3793, D-5494, D-6061, D-6808, D-7861, D-8737, D-8913, D-9304, D-9336",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 263.34,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 60563,
+        "completion_tokens": 5238,
+        "total_tokens": 65801,
+        "total_seconds": 263.32,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_48",
+      "type": "violation_rule",
+      "char_len": 130256,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "rag",
+      "answer": "В предоставленных фрагментах отсутствует информация о лимитах по категориям договоров, поэтому определить нарушающие их невозможно.",
+      "gold": "D-1244, D-2006, D-3793, D-5494, D-6061, D-6808, D-7861, D-8737, D-8913, D-9304, D-9336",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 73.4,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2599,
+        "completion_tokens": 1552,
+        "total_tokens": 4151,
+        "total_seconds": 64.9,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "viol_rule_48",
+      "type": "violation_rule",
+      "char_len": 130256,
+      "question": "По регламенту договор нарушает лимит, если его сумма превышает лимит его категории. Перечисли номера всех договоров (вида D-XXXX), нарушающих лимит. Перечисли через запятую.",
+      "method": "naive",
+      "answer": "",
+      "gold": "D-1244, D-2006, D-3793, D-5494, D-6061, D-6808, D-7861, D-8737, D-8913, D-9304, D-9336",
+      "correct": false,
+      "judge_method": "set",
+      "elapsed": 263.27,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 37508,
+        "completion_tokens": 2048,
+        "total_tokens": 39556,
+        "total_seconds": 263.27,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2338 @@
+{
+  "config": {
+    "lengths": [
+      8000,
+      32000,
+      128000
+    ],
+    "per_type": 4,
+    "methods": [
+      "rlm",
+      "rag",
+      "naive"
+    ]
+  },
+  "elapsed_total": 6394.2,
+  "records": [
+    {
+      "task_id": "single_1",
+      "type": "single_hop",
+      "char_len": 9007,
+      "method": "rlm",
+      "answer": "BTRQJG",
+      "gold": "BTRQJG",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 9.96,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1597,
+        "completion_tokens": 240,
+        "total_tokens": 1837,
+        "total_seconds": 9.96,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_1",
+      "type": "single_hop",
+      "char_len": 9007,
+      "method": "rag",
+      "answer": "Секретный код объекта «Цитадель-214» — BTRQJG.",
+      "gold": "BTRQJG",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 32.75,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2735,
+        "completion_tokens": 733,
+        "total_tokens": 3468,
+        "total_seconds": 31.66,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_1",
+      "type": "single_hop",
+      "char_len": 9007,
+      "method": "naive",
+      "answer": "Секретный код объекта «Цитадель-214» — BTRQJG.",
+      "gold": "BTRQJG",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 26.67,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3465,
+        "completion_tokens": 444,
+        "total_tokens": 3909,
+        "total_seconds": 26.67,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_2",
+      "type": "single_hop",
+      "char_len": 9059,
+      "method": "rlm",
+      "answer": "UPDDWD",
+      "gold": "UPDDWD",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 12.05,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1666,
+        "completion_tokens": 210,
+        "total_tokens": 1876,
+        "total_seconds": 12.05,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_2",
+      "type": "single_hop",
+      "char_len": 9059,
+      "method": "rag",
+      "answer": "UPDDWD",
+      "gold": "UPDDWD",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 29.56,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2821,
+        "completion_tokens": 555,
+        "total_tokens": 3376,
+        "total_seconds": 28.78,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_2",
+      "type": "single_hop",
+      "char_len": 9059,
+      "method": "naive",
+      "answer": "Секретный код объекта «Башня-294» — UPDDWD.",
+      "gold": "UPDDWD",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 28.29,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3482,
+        "completion_tokens": 441,
+        "total_tokens": 3923,
+        "total_seconds": 28.29,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_3",
+      "type": "single_hop",
+      "char_len": 8989,
+      "method": "rlm",
+      "answer": "86SRT9",
+      "gold": "86SRT9",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 13.52,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1581,
+        "completion_tokens": 214,
+        "total_tokens": 1795,
+        "total_seconds": 13.52,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_3",
+      "type": "single_hop",
+      "char_len": 8989,
+      "method": "rag",
+      "answer": "86SRT9.",
+      "gold": "86SRT9",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 29.3,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2727,
+        "completion_tokens": 466,
+        "total_tokens": 3193,
+        "total_seconds": 28.36,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_3",
+      "type": "single_hop",
+      "char_len": 8989,
+      "method": "naive",
+      "answer": "Секретный код объекта «Башня-861» — 86SRT9.",
+      "gold": "86SRT9",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 26.26,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3449,
+        "completion_tokens": 415,
+        "total_tokens": 3864,
+        "total_seconds": 26.26,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_4",
+      "type": "single_hop",
+      "char_len": 8993,
+      "method": "rlm",
+      "answer": "H4Q266",
+      "gold": "H4Q266",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 12.64,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1668,
+        "completion_tokens": 217,
+        "total_tokens": 1885,
+        "total_seconds": 12.64,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_4",
+      "type": "single_hop",
+      "char_len": 8993,
+      "method": "rag",
+      "answer": "Секретный код объекта «Гильдия-354» — H4Q266.",
+      "gold": "H4Q266",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 31.9,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2704,
+        "completion_tokens": 622,
+        "total_tokens": 3326,
+        "total_seconds": 31.15,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_4",
+      "type": "single_hop",
+      "char_len": 8993,
+      "method": "naive",
+      "answer": "",
+      "gold": "H4Q266",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 37.34,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3415,
+        "completion_tokens": 681,
+        "total_tokens": 4096,
+        "total_seconds": 37.34,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_5",
+      "type": "multi_hop",
+      "char_len": 8983,
+      "method": "rlm",
+      "answer": "Информация о городе Эльдория и годе его основания отсутствует в предоставленном контексте. Город не упоминается ни разу в тексте.",
+      "gold": "Морибонд",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 148.13,
+      "iterations": 11,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 11,
+        "prompt_tokens": 21919,
+        "completion_tokens": 2479,
+        "total_tokens": 24398,
+        "total_seconds": 148.13,
+        "by_role": {
+          "root": 11
+        }
+      }
+    },
+    {
+      "task_id": "multi_5",
+      "type": "multi_hop",
+      "char_len": 8983,
+      "method": "rag",
+      "answer": "",
+      "gold": "Морибонд",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 64.73,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2699,
+        "completion_tokens": 1397,
+        "total_tokens": 4096,
+        "total_seconds": 63.85,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_5",
+      "type": "multi_hop",
+      "char_len": 8983,
+      "method": "naive",
+      "answer": "",
+      "gold": "Морибонд",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 37.7,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3414,
+        "completion_tokens": 682,
+        "total_tokens": 4096,
+        "total_seconds": 37.7,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_6",
+      "type": "multi_hop",
+      "char_len": 9046,
+      "method": "rlm",
+      "answer": "Город Эльдория — вымышленное место из фэнтези-сеттингов (например, The Elder Scrolls), у него нет исторической даты основания; в контексте текста не найдено упоминаний о реальном городе с такой датой",
+      "gold": "Тарн",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 238.82,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 39170,
+        "completion_tokens": 4186,
+        "total_tokens": 43356,
+        "total_seconds": 238.79,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "multi_6",
+      "type": "multi_hop",
+      "char_len": 9046,
+      "method": "rag",
+      "answer": "В предоставленных фрагментах не указано название города, в котором ведётся руководство проектом «Гелиос-23».",
+      "gold": "Тарн",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 57.97,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2752,
+        "completion_tokens": 1143,
+        "total_tokens": 3895,
+        "total_seconds": 57.14,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_6",
+      "type": "multi_hop",
+      "char_len": 9046,
+      "method": "naive",
+      "answer": "",
+      "gold": "Тарн",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 39.68,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3477,
+        "completion_tokens": 619,
+        "total_tokens": 4096,
+        "total_seconds": 39.68,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_7",
+      "type": "multi_hop",
+      "char_len": 9061,
+      "method": "rlm",
+      "answer": "В предоставленном тексте не указано, в каком году основан город Эльдория — найдено 93 упоминания города, но ни одно не содержит информации о дате основания.",
+      "gold": "Эльдория",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 353.79,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 35124,
+        "completion_tokens": 6157,
+        "total_tokens": 41281,
+        "total_seconds": 353.69,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "multi_7",
+      "type": "multi_hop",
+      "char_len": 9061,
+      "method": "rag",
+      "answer": "",
+      "gold": "Эльдория",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 63.68,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2815,
+        "completion_tokens": 1281,
+        "total_tokens": 4096,
+        "total_seconds": 62.72,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_7",
+      "type": "multi_hop",
+      "char_len": 9061,
+      "method": "naive",
+      "answer": "",
+      "gold": "Эльдория",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 40.12,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3478,
+        "completion_tokens": 618,
+        "total_tokens": 4096,
+        "total_seconds": 40.12,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_8",
+      "type": "multi_hop",
+      "char_len": 9060,
+      "method": "rlm",
+      "answer": "Информация о годе основания города Эльдория отсутствует в предоставленном контексте",
+      "gold": "Эльдория",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 371.02,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 19,
+        "prompt_tokens": 36661,
+        "completion_tokens": 7422,
+        "total_tokens": 44083,
+        "total_seconds": 371.0,
+        "by_role": {
+          "root": 16,
+          "recursive": 3
+        }
+      }
+    },
+    {
+      "task_id": "multi_8",
+      "type": "multi_hop",
+      "char_len": 9060,
+      "method": "rag",
+      "answer": "В городе Эльдория.",
+      "gold": "Эльдория",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 60.38,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2792,
+        "completion_tokens": 1303,
+        "total_tokens": 4095,
+        "total_seconds": 59.49,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_8",
+      "type": "multi_hop",
+      "char_len": 9060,
+      "method": "naive",
+      "answer": "",
+      "gold": "Эльдория",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 36.41,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3470,
+        "completion_tokens": 626,
+        "total_tokens": 4096,
+        "total_seconds": 36.41,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_9",
+      "type": "aggregation",
+      "char_len": 9033,
+      "method": "rlm",
+      "answer": "7",
+      "gold": "7",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 49.21,
+      "iterations": 6,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 6,
+        "prompt_tokens": 6713,
+        "completion_tokens": 925,
+        "total_tokens": 7638,
+        "total_seconds": 49.19,
+        "by_role": {
+          "root": 6
+        }
+      }
+    },
+    {
+      "task_id": "agg_9",
+      "type": "aggregation",
+      "char_len": 9033,
+      "method": "rag",
+      "answer": "",
+      "gold": "7",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 58.26,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2851,
+        "completion_tokens": 1245,
+        "total_tokens": 4096,
+        "total_seconds": 57.4,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_9",
+      "type": "aggregation",
+      "char_len": 9033,
+      "method": "naive",
+      "answer": "",
+      "gold": "7",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 31.75,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3573,
+        "completion_tokens": 523,
+        "total_tokens": 4096,
+        "total_seconds": 31.75,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_10",
+      "type": "aggregation",
+      "char_len": 9078,
+      "method": "rlm",
+      "answer": "4",
+      "gold": "4",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 58.65,
+      "iterations": 6,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 6,
+        "prompt_tokens": 7250,
+        "completion_tokens": 1172,
+        "total_tokens": 8422,
+        "total_seconds": 58.65,
+        "by_role": {
+          "root": 6
+        }
+      }
+    },
+    {
+      "task_id": "agg_10",
+      "type": "aggregation",
+      "char_len": 9078,
+      "method": "rag",
+      "answer": "2",
+      "gold": "4",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 47.16,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2821,
+        "completion_tokens": 986,
+        "total_tokens": 3807,
+        "total_seconds": 46.39,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_10",
+      "type": "aggregation",
+      "char_len": 9078,
+      "method": "naive",
+      "answer": "",
+      "gold": "4",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 31.42,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3584,
+        "completion_tokens": 512,
+        "total_tokens": 4096,
+        "total_seconds": 31.42,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_11",
+      "type": "aggregation",
+      "char_len": 9028,
+      "method": "rlm",
+      "answer": "6",
+      "gold": "6",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 29.77,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 3012,
+        "completion_tokens": 588,
+        "total_tokens": 3600,
+        "total_seconds": 29.76,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "agg_11",
+      "type": "aggregation",
+      "char_len": 9028,
+      "method": "rag",
+      "answer": "3",
+      "gold": "6",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 38.54,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2797,
+        "completion_tokens": 750,
+        "total_tokens": 3547,
+        "total_seconds": 37.71,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_11",
+      "type": "aggregation",
+      "char_len": 9028,
+      "method": "naive",
+      "answer": "",
+      "gold": "6",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 33.65,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3531,
+        "completion_tokens": 565,
+        "total_tokens": 4096,
+        "total_seconds": 33.65,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_12",
+      "type": "aggregation",
+      "char_len": 9033,
+      "method": "rlm",
+      "answer": "5",
+      "gold": "5",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 28.24,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 3187,
+        "completion_tokens": 531,
+        "total_tokens": 3718,
+        "total_seconds": 28.23,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "agg_12",
+      "type": "aggregation",
+      "char_len": 9033,
+      "method": "rag",
+      "answer": "5",
+      "gold": "5",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 42.77,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2820,
+        "completion_tokens": 843,
+        "total_tokens": 3663,
+        "total_seconds": 41.92,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_12",
+      "type": "aggregation",
+      "char_len": 9033,
+      "method": "naive",
+      "answer": "",
+      "gold": "5",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 33.89,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 3544,
+        "completion_tokens": 552,
+        "total_tokens": 4096,
+        "total_seconds": 33.89,
+        "by_role": {
+          "naive": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_13",
+      "type": "single_hop",
+      "char_len": 36002,
+      "method": "rlm",
+      "answer": "J3ED5J",
+      "gold": "J3ED5J",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 12.49,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1589,
+        "completion_tokens": 191,
+        "total_tokens": 1780,
+        "total_seconds": 12.49,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_13",
+      "type": "single_hop",
+      "char_len": 36002,
+      "method": "rag",
+      "answer": "J3ED5J",
+      "gold": "J3ED5J",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 37.34,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2810,
+        "completion_tokens": 628,
+        "total_tokens": 3438,
+        "total_seconds": 34.25,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_13",
+      "type": "single_hop",
+      "char_len": 36002,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13509>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "J3ED5J",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "single_14",
+      "type": "single_hop",
+      "char_len": 36026,
+      "method": "rlm",
+      "answer": "6QZNNU",
+      "gold": "6QZNNU",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 11.35,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1641,
+        "completion_tokens": 215,
+        "total_tokens": 1856,
+        "total_seconds": 11.35,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_14",
+      "type": "single_hop",
+      "char_len": 36026,
+      "method": "rag",
+      "answer": "6QZNNU.",
+      "gold": "6QZNNU",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 34.76,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2844,
+        "completion_tokens": 571,
+        "total_tokens": 3415,
+        "total_seconds": 31.62,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_14",
+      "type": "single_hop",
+      "char_len": 36026,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13614>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "6QZNNU",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "single_15",
+      "type": "single_hop",
+      "char_len": 36023,
+      "method": "rlm",
+      "answer": "JMCNG9",
+      "gold": "JMCNG9",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 11.36,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1595,
+        "completion_tokens": 220,
+        "total_tokens": 1815,
+        "total_seconds": 11.36,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_15",
+      "type": "single_hop",
+      "char_len": 36023,
+      "method": "rag",
+      "answer": "Секретный код объекта «Гильдия-955» — JMCNG9.",
+      "gold": "JMCNG9",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 37.56,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2803,
+        "completion_tokens": 640,
+        "total_tokens": 3443,
+        "total_seconds": 34.41,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_15",
+      "type": "single_hop",
+      "char_len": 36023,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13591>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "JMCNG9",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "single_16",
+      "type": "single_hop",
+      "char_len": 35943,
+      "method": "rlm",
+      "answer": "L738V8",
+      "gold": "L738V8",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 14.18,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1617,
+        "completion_tokens": 295,
+        "total_tokens": 1912,
+        "total_seconds": 14.18,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_16",
+      "type": "single_hop",
+      "char_len": 35943,
+      "method": "rag",
+      "answer": "L738V8.",
+      "gold": "L738V8",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 40.44,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2788,
+        "completion_tokens": 713,
+        "total_tokens": 3501,
+        "total_seconds": 37.23,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_16",
+      "type": "single_hop",
+      "char_len": 35943,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13477>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "L738V8",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_17",
+      "type": "multi_hop",
+      "char_len": 36003,
+      "method": "rlm",
+      "answer": "В предоставленном контексте нет информации о годе основания города Эльдория — упоминаний только одно, и дата основания не указана",
+      "gold": "Эльдория",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 328.72,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 17,
+        "prompt_tokens": 39579,
+        "completion_tokens": 5462,
+        "total_tokens": 45041,
+        "total_seconds": 313.08,
+        "by_role": {
+          "root": 16,
+          "recursive": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_17",
+      "type": "multi_hop",
+      "char_len": 36003,
+      "method": "rag",
+      "answer": "В приведённых фрагментах не",
+      "gold": "Эльдория",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 65.19,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2792,
+        "completion_tokens": 1304,
+        "total_tokens": 4096,
+        "total_seconds": 61.86,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_17",
+      "type": "multi_hop",
+      "char_len": 36003,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13514>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Эльдория",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_18",
+      "type": "multi_hop",
+      "char_len": 35960,
+      "method": "rlm",
+      "answer": "Информация о городе Эльдория и годе его основания отсутствует в предоставленном контексте.",
+      "gold": "Морибонд",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 382.51,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 18,
+        "prompt_tokens": 40035,
+        "completion_tokens": 6338,
+        "total_tokens": 46373,
+        "total_seconds": 382.24,
+        "by_role": {
+          "root": 16,
+          "recursive": 2
+        }
+      }
+    },
+    {
+      "task_id": "multi_18",
+      "type": "multi_hop",
+      "char_len": 35960,
+      "method": "rag",
+      "answer": "",
+      "gold": "Морибонд",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 74.58,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2812,
+        "completion_tokens": 1284,
+        "total_tokens": 4096,
+        "total_seconds": 68.88,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_18",
+      "type": "multi_hop",
+      "char_len": 35960,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13493>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Морибонд",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_19",
+      "type": "multi_hop",
+      "char_len": 35976,
+      "method": "rlm",
+      "answer": "Информация о городе Эльдория отсутствует в предоставленном контексте. В тексте упоминаются Ремесленники, Караванщики, Торговцы, Городской совет, Ярмарка, Старые карты, Реки, Погода, Хроники, но город Эльдория не встречается.",
+      "gold": "Сунгрейв",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 170.55,
+      "iterations": 15,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 15,
+        "prompt_tokens": 40241,
+        "completion_tokens": 2637,
+        "total_tokens": 42878,
+        "total_seconds": 170.53,
+        "by_role": {
+          "root": 15
+        }
+      }
+    },
+    {
+      "task_id": "multi_19",
+      "type": "multi_hop",
+      "char_len": 35976,
+      "method": "rag",
+      "answer": "",
+      "gold": "Сунгрейв",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 67.2,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2807,
+        "completion_tokens": 1289,
+        "total_tokens": 4096,
+        "total_seconds": 63.88,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_19",
+      "type": "multi_hop",
+      "char_len": 35976,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13546>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Сунгрейв",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_20",
+      "type": "multi_hop",
+      "char_len": 35969,
+      "method": "rlm",
+      "answer": "В предоставленном контексте нет упоминаний города Эльдория или информации о его основании",
+      "gold": "Тарн",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 279.55,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 34183,
+        "completion_tokens": 4728,
+        "total_tokens": 38911,
+        "total_seconds": 279.47,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "multi_20",
+      "type": "multi_hop",
+      "char_len": 35969,
+      "method": "rag",
+      "answer": "В предоставленных фрагментах не указано название города, в котором ведётся руководство проектом «Гелиос-59».",
+      "gold": "Тарн",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 52.96,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2717,
+        "completion_tokens": 1035,
+        "total_tokens": 3752,
+        "total_seconds": 49.67,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_20",
+      "type": "multi_hop",
+      "char_len": 35969,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13564>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Тарн",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_21",
+      "type": "aggregation",
+      "char_len": 35988,
+      "method": "rlm",
+      "answer": "6",
+      "gold": "6",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 30.79,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 2953,
+        "completion_tokens": 585,
+        "total_tokens": 3538,
+        "total_seconds": 30.79,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "agg_21",
+      "type": "aggregation",
+      "char_len": 35988,
+      "method": "rag",
+      "answer": "",
+      "gold": "6",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 62.38,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2810,
+        "completion_tokens": 1286,
+        "total_tokens": 4096,
+        "total_seconds": 59.24,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_21",
+      "type": "aggregation",
+      "char_len": 35988,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13597>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "6",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_22",
+      "type": "aggregation",
+      "char_len": 36066,
+      "method": "rlm",
+      "answer": "5",
+      "gold": "5",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 27.28,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 4558,
+        "completion_tokens": 495,
+        "total_tokens": 5053,
+        "total_seconds": 27.28,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "agg_22",
+      "type": "aggregation",
+      "char_len": 36066,
+      "method": "rag",
+      "answer": "",
+      "gold": "5",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 61.61,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2810,
+        "completion_tokens": 1286,
+        "total_tokens": 4096,
+        "total_seconds": 58.51,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_22",
+      "type": "aggregation",
+      "char_len": 36066,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13703>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "5",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_23",
+      "type": "aggregation",
+      "char_len": 36057,
+      "method": "rlm",
+      "answer": "3",
+      "gold": "3",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 26.75,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 4011,
+        "completion_tokens": 569,
+        "total_tokens": 4580,
+        "total_seconds": 26.74,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "agg_23",
+      "type": "aggregation",
+      "char_len": 36057,
+      "method": "rag",
+      "answer": "",
+      "gold": "3",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 66.35,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2770,
+        "completion_tokens": 1326,
+        "total_tokens": 4096,
+        "total_seconds": 63.21,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_23",
+      "type": "aggregation",
+      "char_len": 36057,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13669>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "3",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_24",
+      "type": "aggregation",
+      "char_len": 35970,
+      "method": "rlm",
+      "answer": "7",
+      "gold": "7",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 34.66,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 4343,
+        "completion_tokens": 694,
+        "total_tokens": 5037,
+        "total_seconds": 34.64,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "agg_24",
+      "type": "aggregation",
+      "char_len": 35970,
+      "method": "rag",
+      "answer": "",
+      "gold": "7",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 64.16,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2793,
+        "completion_tokens": 1303,
+        "total_tokens": 4096,
+        "total_seconds": 60.91,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_24",
+      "type": "aggregation",
+      "char_len": 35970,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 13590>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "7",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "single_25",
+      "type": "single_hop",
+      "char_len": 143914,
+      "method": "rlm",
+      "answer": "B6EM7T",
+      "gold": "B6EM7T",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 10.14,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1666,
+        "completion_tokens": 219,
+        "total_tokens": 1885,
+        "total_seconds": 10.14,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_25",
+      "type": "single_hop",
+      "char_len": 143914,
+      "method": "rag",
+      "answer": "Секретный код объекта «Порт-983» — B6EM7T.",
+      "gold": "B6EM7T",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 39.0,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2845,
+        "completion_tokens": 492,
+        "total_tokens": 3337,
+        "total_seconds": 27.63,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_25",
+      "type": "single_hop",
+      "char_len": 143914,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 42036>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "B6EM7T",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "single_26",
+      "type": "single_hop",
+      "char_len": 143979,
+      "method": "rlm",
+      "answer": "КTF3J5",
+      "gold": "KTF3J5",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 8.85,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1578,
+        "completion_tokens": 209,
+        "total_tokens": 1787,
+        "total_seconds": 8.85,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_26",
+      "type": "single_hop",
+      "char_len": 143979,
+      "method": "rag",
+      "answer": "KTF3J5.",
+      "gold": "KTF3J5",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 39.08,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2852,
+        "completion_tokens": 486,
+        "total_tokens": 3338,
+        "total_seconds": 27.69,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_26",
+      "type": "single_hop",
+      "char_len": 143979,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41999>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "KTF3J5",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "single_27",
+      "type": "single_hop",
+      "char_len": 143934,
+      "method": "rlm",
+      "answer": "KR93NE",
+      "gold": "KR93NE",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 15.23,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1753,
+        "completion_tokens": 348,
+        "total_tokens": 2101,
+        "total_seconds": 15.23,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_27",
+      "type": "single_hop",
+      "char_len": 143934,
+      "method": "rag",
+      "answer": "KR93NE",
+      "gold": "KR93NE",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 40.35,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2858,
+        "completion_tokens": 499,
+        "total_tokens": 3357,
+        "total_seconds": 28.87,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_27",
+      "type": "single_hop",
+      "char_len": 143934,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 42008>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "KR93NE",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "single_28",
+      "type": "single_hop",
+      "char_len": 143894,
+      "method": "rlm",
+      "answer": "KV3XSL",
+      "gold": "KV3XSL",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 9.36,
+      "iterations": 2,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 2,
+        "prompt_tokens": 1676,
+        "completion_tokens": 208,
+        "total_tokens": 1884,
+        "total_seconds": 9.36,
+        "by_role": {
+          "root": 2
+        }
+      }
+    },
+    {
+      "task_id": "single_28",
+      "type": "single_hop",
+      "char_len": 143894,
+      "method": "rag",
+      "answer": "Секретный код объекта «Башня-897» — KV3XSL.",
+      "gold": "KV3XSL",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 41.83,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2828,
+        "completion_tokens": 541,
+        "total_tokens": 3369,
+        "total_seconds": 30.25,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "single_28",
+      "type": "single_hop",
+      "char_len": 143894,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41983>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "KV3XSL",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_29",
+      "type": "multi_hop",
+      "char_len": 143923,
+      "method": "rlm",
+      "answer": "Город Эльдория не упомянут в предоставленном тексте. В контексте нет информации о дате основания этого города.",
+      "gold": "Кантара",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 318.06,
+      "iterations": 15,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 15,
+        "prompt_tokens": 30589,
+        "completion_tokens": 5867,
+        "total_tokens": 36456,
+        "total_seconds": 317.92,
+        "by_role": {
+          "root": 15
+        }
+      }
+    },
+    {
+      "task_id": "multi_29",
+      "type": "multi_hop",
+      "char_len": 143923,
+      "method": "rag",
+      "answer": "В приведённых фрагментах не указано название города, в котором ведётся руководство проектом «Обол-11».",
+      "gold": "Кантара",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 70.66,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2787,
+        "completion_tokens": 1135,
+        "total_tokens": 3922,
+        "total_seconds": 57.82,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_29",
+      "type": "multi_hop",
+      "char_len": 143923,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41942>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Кантара",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_30",
+      "type": "multi_hop",
+      "char_len": 143845,
+      "method": "rlm",
+      "answer": "Информация о годе основания города Эльдория отсутствует в предоставленном контексте. Текст содержит записи с номерами от [0000] до [2261], но ни одно упоминание города \"Эльдория\" или даты его основания не обнаружено.",
+      "gold": "Калленхейм",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 208.44,
+      "iterations": 12,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 12,
+        "prompt_tokens": 24105,
+        "completion_tokens": 3581,
+        "total_tokens": 27686,
+        "total_seconds": 208.07,
+        "by_role": {
+          "root": 12
+        }
+      }
+    },
+    {
+      "task_id": "multi_30",
+      "type": "multi_hop",
+      "char_len": 143845,
+      "method": "rag",
+      "answer": "",
+      "gold": "Калленхейм",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 81.22,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2793,
+        "completion_tokens": 1303,
+        "total_tokens": 4096,
+        "total_seconds": 67.59,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_30",
+      "type": "multi_hop",
+      "char_len": 143845,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41889>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Калленхейм",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_31",
+      "type": "multi_hop",
+      "char_len": 143901,
+      "method": "rlm",
+      "answer": "Информация о городе Эльдория отсутствует в предоставленном контексте; невозможно определить год основания на основе имеющихся данных",
+      "gold": "Калленхейм",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 372.11,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 17,
+        "prompt_tokens": 35302,
+        "completion_tokens": 5978,
+        "total_tokens": 41280,
+        "total_seconds": 371.7,
+        "by_role": {
+          "root": 16,
+          "recursive": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_31",
+      "type": "multi_hop",
+      "char_len": 143901,
+      "method": "rag",
+      "answer": "В предоставленных фрагментах не указано название города, где ведётся руководство проектом «Кобальт-",
+      "gold": "Калленхейм",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 83.02,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2819,
+        "completion_tokens": 1277,
+        "total_tokens": 4096,
+        "total_seconds": 69.62,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_31",
+      "type": "multi_hop",
+      "char_len": 143901,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 42036>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Калленхейм",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "multi_32",
+      "type": "multi_hop",
+      "char_len": 143837,
+      "method": "rlm",
+      "answer": "Информация о годе основания города Эльдория не содержится в предоставленном контексте",
+      "gold": "Эльдория",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 275.4,
+      "iterations": 15,
+      "stopped_reason": "max_iterations",
+      "usage": {
+        "calls": 16,
+        "prompt_tokens": 38633,
+        "completion_tokens": 4329,
+        "total_tokens": 42962,
+        "total_seconds": 275.26,
+        "by_role": {
+          "root": 16
+        }
+      }
+    },
+    {
+      "task_id": "multi_32",
+      "type": "multi_hop",
+      "char_len": 143837,
+      "method": "rag",
+      "answer": "В приведённых фрагментах не указано, в каком городе ведётся руководство проектом «Кобальт-11».",
+      "gold": "Эльдория",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 69.83,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2793,
+        "completion_tokens": 1215,
+        "total_tokens": 4008,
+        "total_seconds": 57.96,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "multi_32",
+      "type": "multi_hop",
+      "char_len": 143837,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41775>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "Эльдория",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_33",
+      "type": "aggregation",
+      "char_len": 143908,
+      "method": "rlm",
+      "answer": "5",
+      "gold": "5",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 30.46,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 2772,
+        "completion_tokens": 576,
+        "total_tokens": 3348,
+        "total_seconds": 30.43,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "agg_33",
+      "type": "aggregation",
+      "char_len": 143908,
+      "method": "rag",
+      "answer": "",
+      "gold": "5",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 78.75,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2785,
+        "completion_tokens": 1311,
+        "total_tokens": 4096,
+        "total_seconds": 67.01,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_33",
+      "type": "aggregation",
+      "char_len": 143908,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 42081>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "5",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_34",
+      "type": "aggregation",
+      "char_len": 143904,
+      "method": "rlm",
+      "answer": "4",
+      "gold": "4",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 19.53,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 2766,
+        "completion_tokens": 372,
+        "total_tokens": 3138,
+        "total_seconds": 19.53,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "agg_34",
+      "type": "aggregation",
+      "char_len": 143904,
+      "method": "rag",
+      "answer": "",
+      "gold": "4",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 80.97,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2786,
+        "completion_tokens": 1310,
+        "total_tokens": 4096,
+        "total_seconds": 66.84,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_34",
+      "type": "aggregation",
+      "char_len": 143904,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41858>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "4",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_35",
+      "type": "aggregation",
+      "char_len": 143908,
+      "method": "rlm",
+      "answer": "6",
+      "gold": "6",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 37.39,
+      "iterations": 4,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 4,
+        "prompt_tokens": 4689,
+        "completion_tokens": 697,
+        "total_tokens": 5386,
+        "total_seconds": 37.38,
+        "by_role": {
+          "root": 4
+        }
+      }
+    },
+    {
+      "task_id": "agg_35",
+      "type": "aggregation",
+      "char_len": 143908,
+      "method": "rag",
+      "answer": "",
+      "gold": "6",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 76.81,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2785,
+        "completion_tokens": 1311,
+        "total_tokens": 4096,
+        "total_seconds": 63.52,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_35",
+      "type": "aggregation",
+      "char_len": 143908,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41978>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "6",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    },
+    {
+      "task_id": "agg_36",
+      "type": "aggregation",
+      "char_len": 143985,
+      "method": "rlm",
+      "answer": "3",
+      "gold": "3",
+      "correct": true,
+      "judge_method": "exact",
+      "elapsed": 19.07,
+      "iterations": 3,
+      "stopped_reason": "final",
+      "usage": {
+        "calls": 3,
+        "prompt_tokens": 2759,
+        "completion_tokens": 396,
+        "total_tokens": 3155,
+        "total_seconds": 19.07,
+        "by_role": {
+          "root": 3
+        }
+      }
+    },
+    {
+      "task_id": "agg_36",
+      "type": "aggregation",
+      "char_len": 143985,
+      "method": "rag",
+      "answer": "",
+      "gold": "3",
+      "correct": false,
+      "judge_method": "exact",
+      "elapsed": 79.41,
+      "iterations": null,
+      "stopped_reason": null,
+      "usage": {
+        "calls": 1,
+        "prompt_tokens": 2806,
+        "completion_tokens": 1290,
+        "total_tokens": 4096,
+        "total_seconds": 66.72,
+        "by_role": {
+          "rag": 1
+        }
+      }
+    },
+    {
+      "task_id": "agg_36",
+      "type": "aggregation",
+      "char_len": 143985,
+      "method": "naive",
+      "answer": "[EXCEPTION] Error code: 400 - {'error': 'The number of tokens to keep from the initial prompt is greater than the context length (n_keep: 41960>= n_ctx: 4096). Try to load the model with a larger context length, or provide a shorter input.'}",
+      "gold": "3",
+      "correct": false,
+      "judge_method": "error",
+      "elapsed": 0.0,
+      "iterations": null,
+      "stopped_reason": "exception",
+      "usage": {
+        "total_tokens": 0
+      }
+    }
+  ]
+}
